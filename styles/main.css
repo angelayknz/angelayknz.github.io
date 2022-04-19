@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=open+Sans:300italic,700italic,300,700);
+@import url(https://fonts.googleapis.com/css2?family=Amaranth&display=swap);
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -36,6 +37,14 @@ a {
   text-transform: uppercase;
   text-align: center;
   display: block;
+  color: #34495e;
+}
+
+.logo a {
+  font-family: 'Amaranth', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #34495e;
 }
 
 .main-nav a {
@@ -52,9 +61,6 @@ a {
   padding-bottom: 0.5em;
   border: 1px solid #a2a2a2;
   background-color: #f4f4f4;
-  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -113,14 +119,9 @@ h4 {
 p {
   margin: 0 0 1em 0;
 }
-a {
-  color: #007eff;
-}
-a:visited {
-  color: #65b1ff;
-}
+
 a.btn {
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
@@ -140,122 +141,29 @@ section::after {
   display: block;
   clear: both;
 }
-/* Section Main */
-section.main {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 0;
-}
-section.main aside {
-  width: 33%;
-  float: left;
-  text-align: center;
-}
-section.main .content {
-  margin: 15px;
-  background: no-repeat center top;
-  background-size: 75px 75px;
-  padding-top: 85px;
-}
-section.main aside h3 a {
-  color: #000;
-  text-decoration: none;
-}
-section.main aside h3 a:hover {
-  text-decoration: underline;
-}
-section.main aside .content.trending {
-  background-image: url(icon_star.svg);
-}
-section.main aside .content.content.find-it {
-  background-image: url(icon_marker.svg);
-}
-section.main aside .content.tools {
-  background-image: url(icon_gear.svg);
-}
-/* Section Atmophere */
-section.atmosphere {
-  background-color: #cc633c;
+
+/* Section Blog */
+section.about {
+  background-color: #b4d7f1;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 30px;
   color: #fff;
 }
-section.atmosphere article {
-  padding: 0 20px 0 515px;
-  background: url(photo_lounge.jpg) no-repeat 0 5px;
+
+section.blog {
+  background-color: rgb(109, 189, 181);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  color: #fff;
+}
+
+section.blog article,
+section.about article {
+  padding: 0 20px;
   min-height: 220px;
-}
-/* Section - how-to */
-section.how-to {
-  background-color: #eee9d9;
-  position: relative;
-}
-section.how-to aside {
-  width: 30%;
-  float: left;
-  margin-right: 10px;
-}
-section.how-to aside .content {
-  padding: 30px 30px 20px 0;
-}
-section.how-to aside .content img {
-  display: block;
-  margin-bottom: 15px;
-  width: 70%;
-}
-section.how-to aside .content h4 {
-  margin-bottom: 0;
-}
-section.how-to aside .content p {
-  margin-bottom: 0.5em;
-}
-section.how-to aside .content a {
-  display: inline-block;
-  color: #cc6633;
-  font-weight: 700;
-}
-section.how-to blockquote {
-  margin: 0;
-  width: 32%;
-  color: #444;
-  background-color: #fff;
-  position: absolute;
-  bottom: 0;
-  right: 4%;
-}
-section.how-to blockquote p {
-  margin: 30px 30px 20px 50px;
-}
-section.how-to blockquote p.quote {
-  font-style: italic;
-  font-size: 1.2em;
-}
-section.how-to blockquote p.credit {
-  color: #777;
-  font-size: 0.9em;
-  margin-top: 0;
-  padding-left: 20px;
-  line-height: 1.3em;
-  position: relative;
-}
-section.how-to blockquote::before {
-  content: '\201c';
-  color: #d2bd65;
-  position: absolute;
-  top: 10px;
-  left: 8px;
-  font-size: 5em;
-  font-family: serif;
-}
-section.how-to blockquote p.quote::after {
-  content: '\201d';
-  font-family: serif;
-}
-section.how-to blockquote p.credit::before {
-  content: '\2014';
-  position: absolute;
-  top: -1px;
-  left: 0;
+  text-align: center;
 }
 
 /* Contact Form */
@@ -266,14 +174,12 @@ section.contact {
 }
 
 .contact {
-  margin-top: 2.5em;
+  margin-top: 2.2em;
 }
 
-/* Form */
 .container {
   max-width: 850px;
-  margin: 40px auto;
-  /* box-shadow: 0 0 20px rgba(72, 98, 85, 0.6); */
+  margin: 0 auto;
 }
 
 .form-text {
@@ -282,8 +188,9 @@ section.contact {
 
 .form-wrap {
   background-color: whitesmoke;
-  padding: 25px 25px;
+  padding: 5px 25px;
   color: #333;
+  font-size: 14px;
 }
 
 .form-wrap .form-group {
@@ -313,10 +220,7 @@ textarea {
 
 ::placeholder {
   font-family: sans-serif;
-}
-
-#subject {
-  height: 7.5em;
+  font-size: 13px;
 }
 
 /* button */
@@ -335,7 +239,7 @@ textarea {
 }
 
 .form-wrap button:hover {
-  background: #65b1ff;
+  background: #b5d7f9;
 }
 
 .form-wrap .bottom-text {
@@ -350,9 +254,10 @@ p {
 }
 
 p {
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 10px;
   font-size: 0.95em;
+  padding-bottom: 25px;
 }
 
 /* Footer */
@@ -390,9 +295,9 @@ footer a:hover {
     margin-bottom: 20px;
   }
 
-  /* section - atmosphere */
-  section.atmosphere article {
-    padding-left: 400px;
+  /* section - about & blog */
+  section.about article,
+  section.blog article {
     background-size: 375px auto;
   }
 }
@@ -401,24 +306,14 @@ footer a:hover {
   h1 {
     font-size: 2.2em;
   }
-  header {
-    height: 300px;
-    background-image: url('banner_825.jpg');
-  }
+
   header div.hero {
     top: 120px;
     left: 48%;
   }
-  section.atmosphere article {
-    padding-left: 325px;
+  section.about article,
+  section.blog article {
     background-size: 300px auto;
-  }
-  section.how-to blockquote p.quote {
-    font-size: 1.1em;
-    line-height: 1.2em;
-  }
-  section.how-to blockquote p.credit {
-    font-size: 0.85em;
   }
 }
 
@@ -436,28 +331,6 @@ footer a:hover {
     font-size: 1em;
   }
 
-  /* everyday things  */
-  header a.logo {
-    width: 145px;
-    height: 60px;
-  }
-  header div.hero {
-    top: 140px;
-    left: 48%;
-  }
-  section.main {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  /* svg images */
-  section.main aside div.content {
-    background-size: 55px 55px;
-    padding-top: 60px;
-  }
-  /* pictures */
-  section.how-to aside div.content img {
-    width: 85%;
-  }
   /* Nav  */
   nav {
     padding-top: 80px;
@@ -478,17 +351,10 @@ footer a:hover {
     font-size: 0.9em;
   }
 
-  header {
-    height: 160px;
-    background-image: url('banner_625.jpg');
-    background-position: left top;
-  }
-
   nav {
     position: static;
     width: auto;
     padding: 20px 15px;
-    background-color: #4b0a0c;
   }
 
   header a.logo {
@@ -496,8 +362,6 @@ footer a:hover {
     height: 66px;
     left: 0px;
     top: 0px;
-    background-color: rgba(0, 0, 0, 0.65);
-    /* 'Everyday things' logo svg image  */
     background-size: 112px 46px;
     background-position: 20px center;
   }
@@ -514,62 +378,13 @@ footer a:hover {
 
   /* Main asides  */
 
-  section.main aside {
-    width: 100%;
-    float: none;
-    text-align: left;
-  }
-
-  section.main aside div.content {
-    margin: 8px 20px 8px 0;
-    padding: 5px 0px 10px 85px;
-    background-size: 50px 50px;
-    background-position: 20px 5px;
-  }
-
-  section.atmosphere article {
-    padding: 160px 20px 0px 0px;
+  section.about article,
+  section.blog article {
     background-size: 300px auto;
     min-height: initial;
   }
-
-  section.how-to aside {
-    width: 100%;
-    float: none;
-    margin: 0;
-    position: relative;
-  }
-  section.how-to aside div.content {
-    padding: 20px 20px 20px 150px;
-  }
-
-  section.how-to aside div.content p {
-    font-size: 0.9em;
-  }
-
-  section.how-to aside div.content img {
-    display: inline-block;
-    width: 125px;
-    position: absolute;
-    top: 30px;
-    left: 0px;
-  }
-
-  section.how-to blockquote {
-    margin: 0px 20px 0px 40px;
-    width: 90%;
-    padding: 1px 0px 20px 0px;
-    position: relative;
-  }
-
-  section.how-to blockquote p.credit {
-    margin-bottom: 0;
-  }
 }
 
-/* ================================= 
-  Media Queries
-==================================== */
 /* Navbar */
 @media (min-width: 769px) {
   .header,

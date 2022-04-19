@@ -4,129 +4,140 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./styles/main.css" rel="stylesheet" type="text/css">
+    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
     <title>My blog</title>
   </head>
   <body>
-
-<!-- Navbar (sit on top) -->
-<nav class="header">
-  <h1 class="logo"><a href="#">ANGELA YANG</a></h1>
-    <ul class="main-nav">
+    <!-- Navbar (sit on top) -->
+    <nav class="header">
+      <h1 class="logo"><a href="#">ANGELA YANG</a></h1>
+      <ul class="main-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#blog_post">Blog</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#contact_us">Contact</a></li>
-    </ul>
-</nav> 
+      </ul>
+    </nav>
 
-<div id="page">
-<!-- Hero image -->
-  <header>
-      <div class="Hero"></div>
-  </header>
+    <div id="page">
+      <!-- Hero image -->
+      <header>
+        <div class="Hero"></div>
+      </header>
 
-  <section class="main">
-      <aside>
-          <div class="content trending">
-              <h3><a href="#">What&apos;s trending</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellendus. Et obcaecati nihil reprehenderit animi error quo veritatis, dignissimos hic.</p>
-          </div>
-      </aside>
-      <aside>
-          <div class="content find-it">
-              <h3><a href="#">Where to find it</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eveniet quidem nemo sit libero rerum placeat vitae labore provident dolores?</p>
-          </div>
-      </aside>
-      <aside>
-          <div class="content tools">
-              <h3><a href="#">Free resources</a></h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum rem earum mollitia saepe unde quam? Eius fugiat dolores tenetur provident.</p>
-          </div>
-      </aside>
-  </section>
+      <!-- About Section -->
+      <section class="about" id="about_me">
+        <article>
+          <h2>ABOUT</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            libero quidem illo natus voluptatum odio enim accusamus, repellat
+            nesciunt veritatis tenetur ea. Nam dolorum, quam cum asperiores
+            ullam adipisci dolorem? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Maiores libero quidem illo natus voluptatum odio
+            enim accusamus, repellat nesciunt veritatis tenetur ea. Nam dolorum,
+            quam cum asperiores ullam adipisci dolorem?
+          </p>
+          <a class="btn" title="previous_blogs" href="#contact_us"
+            >Contact me</a
+          >
+        </article>
+      </section>
 
-  <section class="atmosphere" id="blog_post">
-      <article>
-          <h2>Blogs</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero quidem illo natus voluptatum odio enim accusamus, repellat nesciunt veritatis tenetur ea. Nam dolorum, quam cum asperiores ullam adipisci dolorem?</p>
-          <a class="btn" title="Creating a modern atmosphere" href="#">Previous blogs</a>
-      </article>
-  </section>
-  
-  <section class="how-to">
-    <aside>
-      <div class="content">
-          <img alt="" src="css/photo_lighting.jpg">
-          <h4>How-to: lighting</h4>  
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laudantium dolorum numquam, quibusdam tenetur recusandae!</p>     
-          <a title="How to choose lighting" href="#">Read more</a>
-  </aside>
-      <aside>
-          <div class="content">
-              <img alt="" src="css/photo_lighting.jpg">
-              <h4>How-to: lighting</h4>  
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laudantium dolorum numquam, quibusdam tenetur recusandae!</p>     
-              <a title="How to choose lighting" href="#">Read more</a>
-      </aside>
-      <aside>
-        <div class="content">
-            <img alt="" src="css/photo_lighting.jpg">
-            <h4>How-to: lighting</h4>  
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laudantium dolorum numquam, quibusdam tenetur recusandae!</p>     
-            <a title="How to choose lighting" href="#">Read more</a>
-    </aside>
-     
-  </section>
+      <!-- Blog Section -->
+      <section class="blog" id="blog_post">
+        <article>
+          <h2>BLOG</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            libero quidem illo natus voluptatum odio enim accusamus, repellat
+            nesciunt veritatis tenetur ea. Nam dolorum, quam cum asperiores
+            ullam adipisci dolorem? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Maiores libero quidem illo natus voluptatum odio
+            enim accusamus, repellat nesciunt veritatis tenetur ea. Nam dolorum,
+            quam cum asperiores ullam adipisci dolorem?
+            <br>
+            <ul>
+              <a href="https://angelayknz.github.io/blog/te-houtaewa-template.html">
+              The Story of Te Houtaewa</a><br>
+              <a href="https://angelayknz.github.io/blog/identity-values.html">
+                My Identity and Values</a><br>
+                <a href="https://angelayknz.github.io/blog/identity-values.html">
+                  HTML and CSS</a>
+            </ul>
+          </p>
+          <a class="btn" title="previous_blogs" href="#ß">Read more</a>
+        </article>
+      </section>
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact_us">
-    <h2 class="contact-text">Contact Us</h2>
-    <p>Talk to us about your next project. We are here to help.</p>
-    <div class="container">
-      <div class="form-wrap">
-        <form action="thankyou.html">
-          <div class="form-group">
-            <label for="full name">Full Name</label>
-            <input type="text" id="name" name="full name" aria-label="full name" placeholder="Type your full name.." required/>
+      <!-- Contact Section -->
+      <section class="contact" id="contact_us">
+        <h2 class="contact-text">CONTACT</h2>
+        <p>Talk to us about your next project. We are here to help.</p>
+        <div class="container">
+          <div class="form-wrap">
+            <form action="thankyou.html">
+              <div class="form-group">
+                <label for="full name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="full name"
+                  aria-label="full name"
+                  placeholder="Type your full name.."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone number"
+                  aria-label="phone number"
+                  placeholder="Type your phone number.."
+                  onkeypress="numberValidation(event)"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  aria-label="email"
+                  placeholder="Type your email.."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Message</label>
+                <textarea
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  aria-label="message"
+                  placeholder="Type Your Message..."
+                  cols="60"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button class="button" type="submit">Send</button>
+            </form>
           </div>
-  
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="text" id="phone" name="phone number" aria-label="phone number" placeholder="Type your phone number.." onkeypress="numberValidation(event)" required/>
-         </div>
-         <div class="form-group">
-           <label for="email">Email</label>
-           <input type="email" id="email" name="email" aria-label="email" placeholder="Type your email.." required/>
-          </div>
-          <div class="form-group">
-           <label for="subject">Message</label>
-           <textarea type="text" id="subject" name="subject" aria-label="message" placeholder="Type Your Message..." cols="60" rows="10" required></textarea>
-         </div>
-           <button class ="button" type="submit">Send</button> 
-        </form>
-      
-      <div class="log-in">
-      <p class="account">Already have an account? <a href="#">Login Here</a></p>
+        </div>
+      </section>
     </div>
-      <div class="social-login">
-        
-        <ul class="socials">
-            <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-            <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-            <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  </section>
 
-  <footer>
+    <footer>
       &copy; Angela Yang 2022
-          <a title="Privacy Policy" href="#">Privacy Policy</a>
-          <a title="Terms of Service" href="#">Terms of Service</a>
-      </div>
-  </footer>
-</div>    
-
+      <a title="Privacy Policy" href="#">Privacy Policy</a>
+      <a title="Terms of Service" href="#">Terms of Service</a>
+    </footer>
+  </body>
+</html>

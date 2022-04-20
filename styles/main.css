@@ -142,7 +142,7 @@ section::after {
   clear: both;
 }
 
-/* Section Blog */
+/* Section About */
 section.about {
   background-color: #b4d7f1;
   padding-top: 30px;
@@ -150,7 +150,12 @@ section.about {
   margin-top: 30px;
   color: #fff;
 }
-
+section.about img {
+  width: 200px;
+  height: 200px;
+  margin-right: 25px;
+}
+/* Section Blog */
 section.blog {
   background-color: rgb(109, 189, 181);
   padding-top: 30px;

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=open+Sans:300italic,700italic,300,700);
+/* @import url(https://fonts.googleapis.com/css?family=open+Sans:300italic,700italic,300,700); */
 @import url(https://fonts.googleapis.com/css2?family=Amaranth&display=swap);
 * {
   box-sizing: border-box;
@@ -41,7 +41,7 @@ a {
 }
 
 .logo a {
-  font-family: 'Amaranth', sans-serif;
+  font-family: 'Amaranth', sans-serif !important;
   font-weight: bold;
   font-size: 1.2em;
   color: #34495e;

@@ -5,17 +5,95 @@
     <meta charset="UTF-8" />
     <link href="../styles/main.css" rel="stylesheet" type="text/css" />
   </head>
+  <style>
+    * {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      background-color: rgb(238, 254, 249);
+    }
 
+    body {
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-nav {
+      margin: 25px auto;
+    }
+
+    .main-nav a {
+      padding: 10px 15px;
+      text-transform: uppercase;
+      color: #34495e;
+      font-size: 0.99em;
+      text-decoration: none;
+    }
+
+    .main-nav a:hover {
+      color: #718daa;
+    }
+
+    .header ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    nav.header {
+      height: 50px;
+      position: relative;
+    }
+
+    h1,
+    h3 {
+      text-align: center;
+    }
+    h1 {
+      margin-top: 30px;
+    }
+    h3 {
+      font-style: italic;
+    }
+    p {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .challenge img {
+      display: block;
+      justify-content: center;
+      width: 628px;
+      height: 320px;
+    }
+
+    .challenge p {
+      margin-top: 0;
+      font-size: 13px;
+      font-style: italic;
+    }
+  </style>
   <body>
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>
-      E kore e mau i a koe, he wae kai pakiaka.
+    <nav class="header">
+      <ul class="main-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#blog_post">Blog</a></li>
+        <li><a href="../blog/profile.html" target="_blank">Portfolio</a></li>
+        <li><a href="#contact_us">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h1>The Story of Te Houtaewa</h1>
+    <h3>
+      E kore e mau i a koe, he wae kai <br />
       <em
         >A foot accustomed to running over roots makes the speediest runner.</em
       >
-      (Optional SUB title)
-    </h2>
-    <h3>10 November 2010</h3>
+    </h3>
+    <h4>Published: 10 November 2010</h4>
 
     <p>
       Te Houtaewa was the fastest runner of his day and played many pranks on
@@ -37,7 +115,13 @@
       While Te Houtaewa was filling his baskets with kumara he was spotted
       stealing the kai (food). He was immediately recognised.
     </p>
-
+    <div class="challenge">
+      <h4>The Te Houtaewa Challenge</h4>
+      <img src="../images/Te_Houtaewa.jpeg" alt="The Te Houtaewa Challenge" />
+      <p>
+        (Credit: http://dhiraja.srichinmoycentre.org/te_houtaewa_challenge_2006)
+      </p>
+    </div>
     <!-- this is a comment. -->
   </body>
 </html>

@@ -1,4 +1,3 @@
-/* @import url(https://fonts.googleapis.com/css?family=open+Sans:300italic,700italic,300,700); */
 @import url(https://fonts.googleapis.com/css2?family=Amaranth&display=swap);
 * {
   box-sizing: border-box;
@@ -171,15 +170,6 @@ section.about article {
   min-height: 220px;
   text-align: center;
 }
-
-/* Sprint */
-/* .sprint a {
-  display: inline-block;
-
-  height: 100px;
-  width: 100px;
-  line-height: 100px;
-} */
 
 /* Contact Form */
 section.contact {
@@ -414,6 +404,13 @@ footer ul li:not(:last-child) {
 
   header div.hero h1 {
     margin-bottom: 10px;
+  }
+
+  header {
+    /* height: 520px; */
+    background-image: url(../images/hero_625.jpeg);
+    /* position: relative; */
+    /* margin-top: 1.5em; */
   }
 
   /* Main asides  */

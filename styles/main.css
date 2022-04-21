@@ -171,6 +171,15 @@ section.about article {
   text-align: center;
 }
 
+/* Sprint */
+/* .sprint a {
+  display: inline-block;
+
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+} */
+
 /* Contact Form */
 section.contact {
   background-color: whitesmoke;

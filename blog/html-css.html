@@ -88,6 +88,10 @@
       padding-top: 15px;
     }
 
+    h1 {
+      line-height: 3;
+    }
+
     h2 {
       text-align: center;
     }
@@ -101,10 +105,20 @@
       line-height: 35px;
     }
 
+    .bold {
+     font-weight: 800;
+      
+      font-size: 25px;
+    }
+
     mark {
   background: wheat;
   border-radius: 5px;
- 
+}
+
+section.example {
+  margin-bottom: 195px;
+  width: 80%;
 }
 
   </style>
@@ -140,14 +154,14 @@
     </div>
     </section>
 
-    <section>
+    <section class="example">
       <h2>Code examples</h2>
       <div class="css-code">
       <img src="../images/css-inline.png" alt="inline">
       <img src="../images/css-inline-block.png" alt="inline-block">
     </div>
-    <p>Can you spot the difference between inline and inline-block now?</p>
-    <p>In conclusion, compared to <mark>display: inline</mark>, the major difference is that <mark>display: inline-block</mark> allows to set a width and height on the element. Also, with <mark>display: inline</mark>, top and bottom margins & paddings are not respected, and with <mark>display: inline-block</mark> they are. You can read more about the inline elements <a a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">here.</a></p>
+    <p>Can you spot the differences between inline and inline-block now?</p>
+    <p><span class="bold">In conclusion</span>, compared to <mark>display: inline</mark>, the major difference is that <mark>display: inline-block</mark> allows to set a width and height on the element. Also, with <mark>display: inline</mark>, top and bottom margins & paddings are not respected, and with <mark>display: inline-block</mark> they are. You can read more about the inline elements <a a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">here.</a></p>
   </section>
   </body>
 </html>

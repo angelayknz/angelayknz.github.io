@@ -66,7 +66,7 @@ a {
 }
 
 header {
-  height: 520px;
+  min-height: 520px;
   background: white url(../images/hero.jpeg) no-repeat center bottom;
   position: relative;
   margin-top: 1.5em;
@@ -407,10 +407,7 @@ footer ul li:not(:last-child) {
   }
 
   header {
-    /* height: 520px; */
     background-image: url(../images/hero_625.jpeg);
-    /* position: relative; */
-    /* margin-top: 1.5em; */
   }
 
   /* Main asides  */
@@ -431,7 +428,6 @@ footer ul li:not(:last-child) {
   .header {
     flex-direction: column;
     align-items: center;
-
     width: 80%;
     margin: 0 auto;
     max-width: 1150px;
@@ -442,5 +438,23 @@ footer ul li:not(:last-child) {
   .header {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    display: none;
+  }
+
+  footer {
+    padding: 0.625rem;
+    /* height: 3.5rem; */
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 0.7em;
   }
 }

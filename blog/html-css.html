@@ -3,46 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
     <title>HTML and CSS</title>
   </head>
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(238, 254, 249);
-}
-.main-nav {
-  margin: 25px auto;
-}
+* {
+      max-width: 1200px;
+      position: relative;
+      background-color: rgb(238, 254, 249); 
+      font-family: 'Roboto', sans-serif;
+      margin: 0 auto;
+    }
 
-.main-nav a {
-  padding: 10px 15px;
-  text-transform: uppercase;
-  color: #34495e;
-  font-size: 0.99em;
-  text-decoration: none;
-}
+    body {
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+    }
 
-.main-nav a:hover {
-  color: #718daa;
-}
+    .header ul {
+      align-items: center;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+    }
 
-.header ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-}
+    .header ul li {
+      display: inline-block;
+      list-style: none;
+    }
 
-nav.header {
-  height: 50px;
-  position: relative;
-}
-   
+    .header ul li a {
+      text-decoration: none;
+      padding: 0 15px;
+      color: #34495e;
+      width: 90px;
+      display: block;
+      padding: 25px 5px;
+      text-align: center;
+    }
+
+    .main-nav a:hover {
+      color: #718daa;
+    }
+    
     .html-css {
       text-align: center;   
       margin-top: 30px;
@@ -60,6 +68,7 @@ nav.header {
 
     .css-list ul {
       font-size: 18px;
+      line-height: 1.6;
     }
 
     section.css-code {
@@ -73,6 +82,10 @@ nav.header {
       margin-right: auto;
       width: 60%;
       padding-top: 30px;
+    }
+
+    .inline-block {
+      padding-top: 15px;
     }
 
     h2 {
@@ -98,10 +111,10 @@ nav.header {
   <body>
     <nav class="header">
       <ul class="main-nav">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#blog_post">Blog</a></li>
-        <li><a href="../blog/profile.html" target="_blank">Portfolio</a></li>
-        <li><a href="#contact_us">Contact</a></li>
+        <li><a href="https://angelayknz.github.io/">Home</a></li>
+        <li><a href="https://angelayknz.github.io/">Blog</a></li>
+        <li><a href="https://angelayknz.github.io/blog/profile.html" target="_blank">Portfolio</a></li>
+        <li><a href="https://angelayknz.github.io/">Contact</a></li>
       </ul>
     </nav>
     
@@ -133,6 +146,7 @@ nav.header {
       <img src="../images/css-inline.png" alt="inline">
       <img src="../images/css-inline-block.png" alt="inline-block">
     </div>
+    <p>Can you spot the difference between inline and inline-block now?</p>
     <p>In conclusion, compared to <mark>display: inline</mark>, the major difference is that <mark>display: inline-block</mark> allows to set a width and height on the element. Also, with <mark>display: inline</mark>, top and bottom margins & paddings are not respected, and with <mark>display: inline-block</mark> they are. You can read more about the inline elements <a a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">here.</a></p>
   </section>
   </body>

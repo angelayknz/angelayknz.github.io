@@ -267,7 +267,7 @@ p {
 /* Footer */
 footer {
   font-size: 0.8em;
-  margin: 40px;
+  margin: 40px 60px 40px 60px;
   color: black;
   display: flex;
   justify-content: space-between;

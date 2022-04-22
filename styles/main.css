@@ -396,6 +396,11 @@ footer ul li:not(:last-child) {
   nav > ul {
     padding-left: 10px;
   }
+
+  header {
+    background-image: url(../images/hero_625.jpeg);
+    min-height: 250px;
+  }
 }
 
 @media screen and (max-width: 625px) {
@@ -434,10 +439,6 @@ footer ul li:not(:last-child) {
     margin-bottom: 10px;
   }
 
-  header {
-    background-image: url(../images/hero_625.jpeg);
-  }
-
   /* Main asides  */
 
   section.about article,
@@ -453,6 +454,7 @@ footer ul li:not(:last-child) {
   .main-nav {
     display: flex;
   }
+
   .header {
     flex-direction: column;
     align-items: center;
@@ -462,16 +464,84 @@ footer ul li:not(:last-child) {
   }
 }
 
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
+  }
+} */
+
+@media (max-width: 671px) {
+  /* header {
+    background-image: url(../images/hero_425.jpeg);
+    min-height: 250px;
+  } */
+
+  .flex-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+  }
+
+  .card-1,
+  .card-2 {
+    padding: 0px;
+  }
+
+  .flex-container ul li {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .flex-container ul li a {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  footer ul {
+    padding: 0.625rem;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1em;
   }
 }
 
 @media (max-width: 425px) {
   header {
     display: none;
+  }
+
+  .flex-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+  }
+
+  .card-1,
+  .card-2 {
+    padding: 0px;
+  }
+
+  .flex-container ul li {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .flex-container ul li a {
+    font-size: 16px;
+    padding-bottom: 5px;
   }
 
   footer {

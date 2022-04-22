@@ -45,6 +45,16 @@ a {
   color: #34495e;
 }
 
+.blog ul li {
+  color: #34495e;
+  border: 1px solid wheat;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 50%);
+  background: radial-gradient(circle at 17% 98%, #d2f7f6, #d2f7ea, #f5e5e5);
+}
+
 .main-nav a {
   color: #34495e;
   font-size: 0.99em;
@@ -168,6 +178,25 @@ section.about article {
   padding: 0 20px;
   min-height: 220px;
   text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-1,
+.card-2 {
+  width: 35%;
+  padding: 15px;
+}
+
+.card-1 a:hover {
+  color: #718daa;
+}
+
+.card-2 a:hover {
+  color: #718daa;
 }
 
 /* Contact Form */

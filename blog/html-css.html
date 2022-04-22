@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML and CSS</title>
   </head>
   <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-* {
+    * {
       max-width: 1200px;
       position: relative;
-      background-color: rgb(238, 254, 249); 
+      background-color: rgb(238, 254, 249);
       font-family: 'Roboto', sans-serif;
       margin: 0 auto;
     }
@@ -22,6 +22,10 @@
       font-weight: 300;
       margin: 0;
       padding: 0;
+    }
+
+    nav {
+      margin-right: 25px;
     }
 
     .header ul {
@@ -50,9 +54,9 @@
     .main-nav a:hover {
       color: #718daa;
     }
-    
+
     .html-css {
-      text-align: center;   
+      text-align: center;
       margin-top: 30px;
       margin-bottom: 50px;
     }
@@ -73,7 +77,6 @@
 
     section.css-code {
       text-align: center;
-    
     }
 
     .css-code img {
@@ -106,62 +109,116 @@
     }
 
     .bold {
-     font-weight: 800;
-      
+      font-weight: 800;
       font-size: 25px;
     }
 
     mark {
-  background: wheat;
-  border-radius: 5px;
-}
+      background: wheat;
+      border-radius: 5px;
+    }
 
-section.example {
-  margin-bottom: 195px;
-  width: 80%;
-}
+    section.example {
+      margin-bottom: 100px;
+      width: 80%;
+    }
 
+    @media screen and (max-width: 625px) {
+      nav {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      .header ul {
+        align-items: center;
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      .header ul li {
+        display: inline-block;
+        width: 80px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header ul li a {
+        display: inline-block;
+        text-align: center;
+      }
+    }
   </style>
+
   <body>
     <nav class="header">
       <ul class="main-nav">
         <li><a href="https://angelayknz.github.io/">Home</a></li>
         <li><a href="https://angelayknz.github.io/">Blog</a></li>
-        <li><a href="https://angelayknz.github.io/blog/profile.html" target="_blank">Portfolio</a></li>
+        <li>
+          <a
+            href="https://angelayknz.github.io/blog/profile.html"
+            target="_blank"
+            >Portfolio</a
+          >
+        </li>
         <li><a href="https://angelayknz.github.io/">Contact</a></li>
       </ul>
     </nav>
-    
-    <section class="html-css">
-    <h1 id="css-h1">CSS Inline vs Inline-Block:</h1>
-    <h2 id="css-h2">what's the difference? </h2>
-    <div class="css-list">
-    <div class="inline">
-      <h3>Inline</h3>
-      <ul>
-        <li>Takes up only as much width as necessary, does not force line breaks after it</li>
-        <li>span, a, img have a default inline property</li>
-        <li>Top and bottom margins & paddings are not respected</li>
-      </ul>
-    </div>
 
-    <div class="inline-block">
-      <h3>Inline-block</h3>
-      <ul>
-        <li>Inline-block allows to set a width and height on the element</li>
-        <li>Top and bottom margins & paddings are respected</li>
-      </ul>
-    </div>
+    <section class="html-css">
+      <h1 id="css-h1">CSS Inline vs Inline-Block:</h1>
+      <h2 id="css-h2">what's the difference?</h2>
+
+      <div class="css-list">
+        <div class="inline">
+          <h3>Inline</h3>
+          <ul>
+            <li>
+              Takes up only as much width as necessary, does not force line
+              breaks after it
+            </li>
+            <li>span, a, img have a default inline property</li>
+            <li>Top and bottom margins & paddings are not respected</li>
+          </ul>
+        </div>
+
+        <div class="inline-block">
+          <h3>Inline-block</h3>
+          <ul>
+            <li>
+              Inline-block allows to set a width and height on the element
+            </li>
+            <li>Top and bottom margins & paddings are respected</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="example">
       <h2>Code examples</h2>
       <div class="css-code">
-      <img src="../images/css-inline.png" alt="inline">
-      <img src="../images/css-inline-block.png" alt="inline-block">
-    </div>
-    <p>Can you spot the differences between inline and inline-block now?</p>
-    <p><span class="bold">In conclusion</span>, compared to <mark>display: inline</mark>, the major difference is that <mark>display: inline-block</mark> allows to set a width and height on the element. Also, with <mark>display: inline</mark>, top and bottom margins & paddings are not respected, and with <mark>display: inline-block</mark> they are. You can read more about the inline elements <a a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">here.</a></p>
-  </section>
+        <img src="../images/css-inline.png" alt="inline" />
+        <img src="../images/css-inline-block.png" alt="inline-block" />
+      </div>
+      <p>Can you spot the differences between inline and inline-block now?</p>
+      <p>
+        <span class="bold">In conclusion</span>, compared to
+        <mark>display: inline</mark>, the major difference is that
+        <mark>display: inline-block</mark> allows to set a width and height on
+        the element. Also, with <mark>display: inline</mark>, top and bottom
+        margins & paddings are not respected, and with
+        <mark>display: inline-block</mark> they are. You can read more about the
+        inline elements
+        <a
+          a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements"
+          target="_blank"
+          >here.</a
+        >
+      </p>
+    </section>
   </body>
 </html>

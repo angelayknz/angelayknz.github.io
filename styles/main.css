@@ -464,19 +464,7 @@ footer ul li:not(:last-child) {
   }
 }
 
-/* @media (min-width: 1025px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-} */
-
 @media (max-width: 671px) {
-  /* header {
-    background-image: url(../images/hero_425.jpeg);
-    min-height: 250px;
-  } */
-
   .flex-container {
     text-align: center;
     justify-content: center;
@@ -526,17 +514,17 @@ footer ul li:not(:last-child) {
     display: inline-block;
   }
 
-  .card-1,
-  .card-2 {
-    padding: 0px;
-  }
-
   .flex-container ul li {
     width: 200px;
     height: 30px;
     line-height: 30px;
     text-align: center;
     margin: 10px auto;
+  }
+
+  .card-1,
+  .card-2 {
+    padding: 0px;
   }
 
   .flex-container ul li a {
@@ -546,7 +534,6 @@ footer ul li:not(:last-child) {
 
   footer {
     padding: 0.625rem;
-    /* height: 3.5rem; */
     flex-direction: row;
     flex-wrap: wrap-reverse;
     display: inline-flex;

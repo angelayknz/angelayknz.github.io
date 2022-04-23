@@ -8,20 +8,24 @@
   </head>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
 
     * {
       max-width: 1200px;
       position: relative;
       background-color: rgb(238, 254, 249);
-      font-family: 'Roboto', sans-serif;
       margin: 0 auto;
+      box-sizing: border-box;
     }
 
     body {
+      /* font-family: 'Amaranth', sans-serif !important; */
+      font-family: 'Roboto', sans-serif;
       font-size: 16px;
       font-weight: 300;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
 
     nav {
@@ -55,6 +59,12 @@
       color: #718daa;
     }
 
+    header {
+      height: 430px;
+      background: url('../images/id-hero.png') no-repeat center bottom;
+      position: relative;
+    }
+
     @media screen and (max-width: 625px) {
       nav {
         display: flex;
@@ -81,6 +91,14 @@
         display: inline-block;
         text-align: center;
       }
+
+      @media (max-width: 425px) {
+        header {
+          height: 250px;
+          margin: 1px 25px;
+          background: url('../images/id-hero-425.png') no-repeat center bottom;
+        }
+      }
     }
   </style>
 
@@ -99,5 +117,98 @@
         <li><a href="https://angelayknz.github.io/">Contact</a></li>
       </ul>
     </nav>
+
+    <header>
+      <div class="Hero"></div>
+    </header>
+
+    <h2>Who Am I</h2>
+    <h3>My Personality</h3>
+
+    <p>The PrinciplesYou Personality Test</p>
+    <p>
+      It has been a while since I last did this test. In the sprit of writing
+      this blog, I have decided to re-do the test. The test is created by Ray
+      Dalio whose book &lt;&lt;Principles: Life & Work&gt;&gt; have made a
+      lasting impact on me on how I make important life decisions, including the
+      decision to get into programming.
+    </p>
+    <p>
+      One of the principles I adopted in my own life after reading Dalio's book
+      is the principle of "radical truth and radical transparency". This
+      principle encourages open and honest dialogue and allows the best thinking
+      to prevail. Being truthful to others is important. So is being truthful to
+      ourselves.
+    </p>
+
+    <div>
+      <!-- <img src="../images/" alt="most like" /> -->
+    </div>
+
+    <p>The moment of truth:</p>
+    <div>
+      <div class="row">
+        <div class="column">
+          <!-- <img
+            src="../images/test_most_like.png"
+            alt="most like"
+            style="width: 100%"
+          /> -->
+        </div>
+        <div class="column">
+          <!-- <img
+            src="../images/test_least_like.png"
+            alt="least like"
+            style="width: 100%"
+          /> -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <!-- <img
+            src="../images/test_growth.png"
+            alt="growth seeker"
+            style="width: 100%"
+          /> -->
+        </div>
+        <div class="column">
+          <!-- <img src="../images/test_strength_2.png" alt="" style="width: 100%" /> -->
+        </div>
+      </div>
+
+      <p>
+        By the way, I love how they see weaknesses and limitations as "Growth
+        Opportunities"
+      </p>
+      <div class="row">
+        <div class="column">
+          <!-- <img
+            src="../images/test_implementer.png"
+            alt="implementer"
+            style="width: 100%"
+          /> -->
+        </div>
+        <div class="column">
+          <!-- <img
+            src="../images/test_enforcer.png"
+            alt="enforcer"
+            style="width: 100%"
+          /> -->
+        </div>
+      </div>
+    </div>
+
+    <p>
+      Based on the results, I have developed my Learning Plan for the upcoming
+      bootcamp. You can read it here.
+    </p>
+
+    <h3>My Core Values</h3>
+
+    <h4>Integrity</h4>
+    <h4>Kindness</h4>
+    <h4>Community</h4>
+    <h4>Curiosity</h4>
   </body>
 </html>

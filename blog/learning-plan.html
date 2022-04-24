@@ -25,28 +25,61 @@
       text-align: center;
       width: 80%;
       align-items: center;
+      margin: 0 auto;
     }
 
-    nav {
-      margin-right: 25px;
+    p {
+      padding: 20px 25px;
+      text-align: justify;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-top: 15px;
+      padding: 10px 25px;
+      color: transparent;
+      background-image: linear-gradient(
+        to right,
+        #553c9a,
+        #ee4b2b,
+        #00c2cb,
+        #ff7f50,
+        #553c9a
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 200%;
+      background-position: -200%;
+      transition: all ease-in-out 2s;
+      cursor: pointer;
+    }
+
+    h3:hover {
+      background-position: 200%;
+    }
+
+    .main {
+      margin-top: 20px;
     }
 
     .header ul {
       align-items: center;
-      font-size: 18px;
+      font-size: 16px;
       margin: 0;
       padding: 0;
-      text-align: right;
+      text-align: center;
     }
 
     .header ul li {
       display: inline-block;
       list-style: none;
+      width: 90px;
+      overflow: hidden;
     }
 
     .header ul li a {
       text-decoration: none;
-      padding: 0 15px;
+      padding: 0 10px;
       color: #34495e;
       width: 90px;
       display: block;
@@ -62,6 +95,7 @@
       height: 430px;
       background: url('../images/plan.png') no-repeat center bottom;
       position: relative;
+      margin: 1px auto;
     }
 
     @media screen and (max-width: 425px) {
@@ -70,25 +104,39 @@
         background: url('../images/plan_425.png') no-repeat center bottom;
         position: relative;
       }
+
+      .header ul {
+        width: 100%;
+      }
+
+      .header ul li {
+        width: 70px;
+        text-align: center;
+      }
+
+      .header ul li a {
+        width: 55px;
+        text-align: center;
+      }
     }
 
     @media screen and (max-width: 625px) {
       nav {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
+        align-items: center;
         margin: 0 auto;
       }
 
       .header ul {
         font-size: 15px;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         text-align: center;
         display: inline-block;
       }
 
       .header ul li {
-        width: 70px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -105,7 +153,9 @@
     <nav class="header">
       <ul class="main-nav">
         <li><a href="https://angelayknz.github.io/">Home</a></li>
-        <li><a href="https://angelayknz.github.io/">Blog</a></li>
+        <li>
+          <a href="https://angelayknz.github.io/index.html#blog_post">Blog</a>
+        </li>
         <li>
           <a
             href="https://angelayknz.github.io/blog/profile.html"
@@ -113,7 +163,11 @@
             >Portfolio</a
           >
         </li>
-        <li><a href="https://angelayknz.github.io/">Contact</a></li>
+        <li>
+          <a href="https://angelayknz.github.io/index.html#contact_us"
+            >Contact</a
+          >
+        </li>
       </ul>
     </nav>
 
@@ -121,50 +175,69 @@
       <div class="Hero"></div>
     </header>
 
-    <div>
-      <p>Long term goal</p>
-      <p>
-        My long term goal is to be location independent. Since I love travel so
-        much, I'd like to be a digital nomad doing things I love and passionate
-        about.
-      </p>
+    <section class="main">
+      <div>
+        <h3>Long term goals</h3>
+        <p>
+          My long term goal is to be location independent. Since I love travel
+          so much, I'd like to be a digital nomad doing things I love and
+          passionate about. Another long term goal is to live in a tiny house
+          within a community to grow our own food and live a sustainable
+          lifestyle.
+        </p>
 
-      <p>
-        My strenght is my passion for learning new things. I am interested in a
-        wide variety of subjects. I always feel there are so much to learn with
-        so little time. On the flip side however, I may not go deep with each of
-        these subjects. Another one of my limitations is that I don't like to
-        ask for help. I tend to solve my own problems via Google or Youtube as
-        I'd like to be self-sufficient. But I realize it's important to ask
-        others for help sometimes, not only to solve problems, but also to build
-        meaningful relationships.
-      </p>
-      <p>
-        The non-tech skill I would like to develop at Dev Academy is effective
-        communication in a virtual environment. I prefer face-to-face
-        communication over online whenever possible. But the world we live in
-        today has changed drastically comparing to just a couple of years ago.
-        Most of the activites have been moved online. Therefore, I'd like to get
-        better at communicating in the cyberspace.
-      </p>
-      <p>My commitment</p>
-      <p>
-        I have been mentally preparing myself for this course for some time now
-        and told family and friends that I need to be laser-foucsed for the
-        upcoming bootcamp. They are all very supportive. It is not only my
-        commitment to bootcamp, but also a commitment to myself.
-      </p>
-      <p>Self-care</p>
-      <p>
-        In general, I am a very laid-back person. I don't get stressed easily
-        (except when I have a deadline that I can't meet). I believe that
-        practicing mindfulness plays a big role in that. Meditation and
-        journalling helps to ground me which clears my mind. Daily movement is
-        extremely important to me. Be it going to the gym or going out for a
-        long walk by the water. A change of scenery will often provide me with a
-        fresh new perspective on the problems I am trying to solve.
-      </p>
-    </div>
+        <h3>Strengths and limitations</h3>
+
+        <p>
+          My strength is my passion for learning new things. I am interested in
+          a wide variety of subjects. I always feel there are so much to learn
+          with so little time. On the flip side however, I may not dive deep
+          within each of these subjects. Another one of my limitations is that I
+          don't like to ask for help. I tend to solve my own problems via Google
+          or Youtube as I'd like to be self-sufficient. But I realize it's
+          important to ask others for help at times, not only to be effective
+          and efficient, but also to build deep and meaningful relationships
+          within the community.
+        </p>
+
+        <h3>Human Skills</h3>
+
+        <p>
+          The non-tech skill I would like to develop at Dev Academy is to be
+          able to communicate effectively in a virtual environment. I prefer
+          face-to-face communications over online whenever possible. But the
+          world we live in today has changed drastically comparing to just a
+          couple of years ago. Most of the activities have been moved online.
+          Therefore, I'd like to get better at communicating in the cyberspace.
+        </p>
+
+        <h3>Commitment</h3>
+
+        <p>
+          I have been mentally preparing myself for this course for some time
+          and have told family and friends that I need to be focused for the
+          upcoming bootcamp. Therefore I won't be able to attend as many social
+          events as I did previously. It is as much a commitment to myself as it
+          is to the bootcamp. Luckily, for me, I already had some practice while
+          doing another course last year. I have built a routine that works for
+          me and keep my life organized.
+        </p>
+
+        <h3>Self-care</h3>
+        <p>
+          In general, I am a very relaxed person. I don't get stressed easily
+          (except when I have a deadline that I can't meet). I believe that
+          practicing mindfulness plays a big role in that. Meditation and
+          journalling helps to center me and keep me grounded. Daily movement is
+          extremely important to me. There is such a thing as mind-body
+          connection in my humble opinion. Be it going to the gym or going out
+          for a long walk by the water. I also find that a change of scenery can
+          often provide me with a new perspective. Step away from the problems I
+          am working on and come back to it, will ofter create a space for fresh
+          insights.
+        </p>
+      </div>
+    </section>
     <p></p>
   </body>
 </html>

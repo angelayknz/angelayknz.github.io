@@ -548,8 +548,12 @@ footer ul li:not(:last-child) {
 
   .about p {
     margin-top: 15px;
-    text-align: justify;
+    text-align: center;
     font-size: 15px;
+  }
+
+  .blog p {
+    text-align: center;
   }
 
   footer {

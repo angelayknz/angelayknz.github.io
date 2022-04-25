@@ -542,8 +542,8 @@ footer ul li:not(:last-child) {
     justify-items: center;
   }
 
-  .profile img {
-    margin: 5px auto;
+  section.about img {
+    margin: auto;
   }
 
   .about p {

@@ -15,17 +15,21 @@
       position: relative;
       background-color: rgb(238, 254, 249);
       font-family: 'Roboto', sans-serif;
-      margin: 0 auto;
     }
 
     body {
       font-size: 16px;
       font-weight: 300;
       padding: 0;
-      text-align: center;
-      width: 80%;
-      align-items: center;
-      margin: 0 auto;
+      margin: 0;
+    }
+
+    header{
+      margin: 0 30px;
+    }
+
+    section.main {
+      margin: 15px 45px;
     }
 
     a {
@@ -37,10 +41,26 @@
       padding: 10px;
       text-align: justify;
       line-height: 1.5;
+      letter-spacing: 0.5px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
     }
 
     .principle_you {
       margin: 30px 15px 30px 15px;
+    }
+
+    .principle_you h4 {
+      text-align: center;
+      font-style: italic;
+    }
+
+    h2 {
+      margin: 25px auto;
+      text-align: center;
     }
 
     h3 {
@@ -66,6 +86,10 @@
 
     h3:hover {
       background-position: 200%;
+    }
+
+    .truth h3 {
+      text-align: center;
     }
 
     .main {
@@ -105,7 +129,7 @@
       height: 430px;
       background: url("../images/id-hero.png") no-repeat center bottom;
       position: relative;
-      margin: 1px auto;
+      margin: 0 30px;
     }
 
     .the_test {
@@ -121,6 +145,7 @@
       text-align: justify;
       font-family: 'Roboto', sans-serif;
       font-size: 15px;
+      letter-spacing: 0.6px;
     }
 
     .the_test img {
@@ -132,18 +157,28 @@
     .best_match {
       margin-top: 25px;
       margin-bottom: 35px;
-    }
+      display: flex;
+      justify-content: center;
+    } 
 
     .type {
-      padding: 15px 25px 15px 0;
+      padding: 0 0 15px 0;
+      margin: 0;
     }
+
+    .results {
+      margin-top: 35px;
+    }
+    .truth {
+      margin-bottom: 55px;
+    }
+    .values {
+      text-align: center;
+    }
+
     @media screen and (max-width: 425px) {
 
-      body {
-        width: 100%;
-        display: inline-table;
-       
-      }
+    
       header {
         height: 230px;
         background: url("../images/id-hero-425.png") no-repeat center bottom;
@@ -165,6 +200,41 @@
       }
     }
 
+    @media screen and (max-width: 768px) {
+      .the_test span {
+        margin-left: 10px;
+      }
+
+      .the_test img {
+        display: block;
+        margin: auto;
+      }
+      .principle_you {
+        margin: 10px auto;
+      }
+    .best_match {
+      display: none;
+    }
+
+    .the_test {
+      display: inline-grid;
+      justify-items: center;
+      padding: 0;
+    }
+
+    .the_test img {
+      margin: 0;
+    }
+
+    .the_test span {
+      margin: 0;
+    }
+
+    .results {
+      margin-top: 0;
+    }
+    }
+
     @media screen and (max-width: 625px) {
       nav {
         display: flex;
@@ -173,6 +243,7 @@
         margin: 0 auto;
       }
 
+    
       .header ul {
         font-size: 15px;
         margin: 0 auto;
@@ -216,37 +287,34 @@
 
     <section class="main">
       <div class="principle_you">
-        <h2>Who Am I</h2>
-        
-        
-
-        <p><strong>The <a href="https://principlesyou.com/" target="blank"><em>PrinciplesYou</em></a> Personality Test</strong></p>
+        <h2>Who Am I</h2>        
+        <h4><strong>The PrinciplesYou Personality Test</strong></h4>
         <p>
           It has been a while since I last did this test. In the sprit of
-          writing this blog, I have decided to re-do it. The test is
-          created by Ray Dalio, whose book <a href="#"><em>Principles: Life and Work</em></a>
-         have made a lasting impact on me. I have adopted some of the principles from this book 
-          and applied them to my own life when it comes to important decision-making, including my decision to learn programming.
+          writing this blog, I have decided to do it again. The <a href="https://principlesyou.com/" target="blank"><em>PrinciplesYou</em></a> test is
+          created by Ray Dalio, whose book <a href="https://www.principles.com/#get-the-books" target="blank"><em>Principles: Life and Work</em></a>
+          have made a lasting impact on me. I have adopted some of the principles from this book 
+          and applied them to my own life when it comes to important decision-makings, that include my decision to learn programming.
           One of the principles I found particulary useful is to practice 'radical truth and radical transparency'.
-          This principle encourages open and honest dialogues and allows the best
-          thinking to prevail. Being truthful to others is important. So is
-          being truthful to ourselves. 
+          This principle encourages open and honest dialogues and allows the best thinking to prevail. 
         </p>
-        
+      </div>
 
+      <div class="truth">
         <h3>Moment of truth</h3>
-        <p>The results showed that my three archetypes are: Growth Seeker, Artisan and Explorer. Personally, I find this test to be quite accurate in 
-          describing my personality type and core values. </p>
+        <p>The test results showed that my three personality archetypes are: Growth Seeker, Artisan and Explorer. Personally, I find the results to be quite accurate in 
+          summarising my personality and core values. </p>
         <div class="best_match">
           <img src="../images/test_most_like.png" alt="personality" width="700">
         </div>
-        
-        </div>
-        </div>
+      </div>
 
+      <hr width="100%" color="green" size="5px" />
+
+      <section class="results">
         <div class="the_test">
-        <img src="../images/growth.svg" alt="growth" height="300" width="255">
-        <span> <h3 class="type">Growth Seeker</h3>
+          <img src="../images/growth.svg" alt="growth" height="300" width="255">
+          <span> <h3 class="type">Growth Seeker</h3>
           Growth Seekers are defined by a deep passion for learning and personal growth and development. They
           tend to be curious, humble, open to new ideas and experiences, and adaptable. Typical Growth Seekers 
           have an endless fascination with personal growth, meaning they devote themselves to improvement and evolution. 
@@ -259,26 +327,21 @@
 
         <div class="the_test">
           <img src="../images/artisan.svg" alt="artisan" height="300" width="255">
-  
-        <span><h3 class="type">Artisans</h3>
-          Artisans are driven to use their creativity to bring life to beautiful and well-crafted ideas. They tend to be imaginative, 
-            detail-oriented and attuned to their own and others' emotions.Artisans are driven to use their creativity to bring life to beautiful and well-crafted ideas.
-
+          <span><h3 class="type">Artisans</h3>
+            Artisans are driven to use their creativity to bring life to beautiful and well-crafted ideas. They tend to be imaginative, 
+            detail-oriented and attuned to their own and others' emotions. Artisans are driven to use their creativity to bring life to beautiful and well-crafted ideas.
             Typical Artisans love to use their imagination and ingenuity to create novel works of art, products, or crafts. They use their attention to detail and precision 
             to perfect their creations and bring them to reality in a way few others can. Intuition and innate instincts guide their quest for originality and independent creation. 
             Other distinguishing characteristics include being independent-minded and preferring to do things their own way. Artisans tend to be curious about new ideas and experiences, 
             and in tune with and sensitive of their own and other people's deeper feelings that enable the creative process and form the basis of their creation and self-expression.</span>
           </div>
 
-          <div class="the_test">
-            <img src="../images/explorer.svg" alt="explorer" height="300px" width="255">
-    
-        <span><h3 class="type">Explorers</h3>
-          Explorers love to take in new knowledge and are drawn to new experiences through intrinsic motivations.
+        <div class="the_test">
+            <img src="../images/explorer.svg" alt="explorer" height="300px" width="255">    
+            <span><h3 class="type">Explorers</h3>
+              Explorers love to take in new knowledge and are drawn to new experiences through intrinsic motivations.
               Typical Explorers are driven by discovery, both about themselves and the world. They are spontaneous, curious, and open-minded, more intrigued by all things they don't know than self-impressed by what they already do. They are self-directed and chart their own path independently. They are attracted to ever-new experiences and endeavors, particularly those that include activities with other like-minded explorers and adventurers. They are typically comfortable with taking risks or diving into ambiguity, particularly if they can derive satisfaction and learning from the experience.</span>
-            </div>
-      </div>
-    </section>
-    
+        </div> 
+      </section>  
   </body>
 </html>

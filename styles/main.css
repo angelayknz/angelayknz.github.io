@@ -140,6 +140,11 @@ a.btn:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.about_425 p,
+.blog_425 p {
+  text-align: justify;
+}
+
 /* Section All */
 section {
   padding: 0 30px;
@@ -530,6 +535,21 @@ footer ul li:not(:last-child) {
   .flex-container ul li a {
     font-size: 16px;
     padding-bottom: 5px;
+  }
+
+  .about_425 {
+    display: inline-grid;
+    justify-items: center;
+  }
+
+  .profile img {
+    margin: 5px auto;
+  }
+
+  .about p {
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 15px;
   }
 
   footer {

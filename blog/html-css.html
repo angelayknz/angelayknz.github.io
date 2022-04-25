@@ -76,15 +76,14 @@
       line-height: 1.6;
     }
 
-    section.css-code {
+    .css-code {
       text-align: center;
+      margin-bottom: 35px;
     }
 
     .css-code img {
       display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 60%;
+      width: 80%;
       padding-top: 30px;
     }
 
@@ -101,17 +100,15 @@
     }
 
     p {
-      font-size: 20px;
+      font-size: 0.99em;
       padding: 5px;
-      margin-top: 30px;
-      margin-left: 50px;
-      margin-right: 50px;
-      line-height: 35px;
+      line-height: 1.6;
     }
 
     .bold {
       font-weight: 800;
-      font-size: 25px;
+      font-size: 1.2em;
+      font-style: italic;
     }
 
     mark {
@@ -153,6 +150,39 @@
 
       .css-list {
         width: 80%;
+      }
+
+      .css-code {
+        margin: 0 0 25px 0;
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      h1 {
+        font-size: 1.4em;
+        line-height: 2.5em;
+      }
+      h2 {
+        font-size: 1.2em;
+      }
+      h3 {
+        font-size: 1.1em;
+      }
+
+      .css-list ul {
+        font-size: 0.9em;
+      }
+
+      .html-css {
+        margin-bottom: 35px;
+      }
+
+      .css-code {
+        margin-bottom: 20px;
+      }
+
+      .css-code img {
+        width: 100%;
       }
     }
   </style>

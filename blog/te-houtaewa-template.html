@@ -24,14 +24,17 @@
     }
 
     .main-nav {
-      margin: 25px auto;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin: 35px 0 15px 0;
     }
 
     .main-nav a {
       padding: 10px 15px;
       text-transform: uppercase;
       color: #34495e;
-      font-size: 0.99em;
+      font-size: 1em;
       text-decoration: none;
     }
 
@@ -46,26 +49,27 @@
       font-size: 18px;
     }
 
-    nav.header {
-      height: 50px;
-      position: relative;
-    }
-
     h1,
     h3 {
       text-align: center;
     }
     h1 {
       margin-top: 30px;
+      font-size: 1.8em;
     }
     h3 {
       font-style: italic;
-      margin-left: 30px;
-      margin-right: 30px;
+      margin-left: 50px;
+      margin-right: 50px;
+      font-size: 1.1em;
+    }
+    h4 {
+      font-size: 0.9em;
     }
     p {
-      margin-left: 30px;
-      margin-right: 30px;
+      margin-left: 50px;
+      margin-right: 50px;
+      text-align: justify;
     }
 
     .challenge img {
@@ -76,10 +80,10 @@
     }
 
     .challenge p {
-      margin-top: 0;
-      font-size: 13px;
+      margin: 0 15px 50px 15px;
+      font-size: 12px;
       font-style: italic;
-      margin-bottom: 100px;
+      text-align: center;
     }
   </style>
 
@@ -87,7 +91,9 @@
     <nav class="header">
       <ul class="main-nav">
         <li><a href="https://angelayknz.github.io/">Home</a></li>
-        <li><a href="https://angelayknz.github.io/">Blog</a></li>
+        <li>
+          <a href="https://angelayknz.github.io/index.html#blog_post">Blog</a>
+        </li>
         <li>
           <a
             href="https://angelayknz.github.io/blog/profile.html"
@@ -95,7 +101,11 @@
             >Portfolio</a
           >
         </li>
-        <li><a href="https://angelayknz.github.io/">Contact</a></li>
+        <li>
+          <a href="https://angelayknz.github.io/index.html#contact_us"
+            >Contact</a
+          >
+        </li>
       </ul>
     </nav>
 

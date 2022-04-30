@@ -36,8 +36,9 @@
       line-height: 1.25;
       font-weight: 500;
       font-size: 20px;
-      margin-top: 15px;
-      padding: 10px 25px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      padding-left: 6px;
       color: transparent;
       background-image: linear-gradient(
         to right,
@@ -53,7 +54,6 @@
       background-position: -200%;
       transition: all ease-in-out 2s;
       cursor: pointer;
-      text-align: center;
     }
 
     h3:hover {
@@ -61,7 +61,7 @@
     }
 
     .main {
-      margin-top: 20px;
+      margin-top: 50px;
     }
 
     .header ul {
@@ -93,11 +93,37 @@
       color: #718daa;
     }
 
+    mark {
+      background: wheat;
+      border-radius: 5px;
+      padding: 1px 3px;
+    }
+
     header {
       height: 430px;
       background: url('../images/javascript.png') no-repeat center bottom;
       position: relative;
       margin: 1px auto;
+    }
+
+    .tri-factor {
+      display: flex;
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    .js_gif {
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .js_gif a {
+      text-decoration: none;
+    }
+
+    .flow_control img {
+      float: right;
+      margin-left: 25px;
     }
 
     @media screen and (max-width: 960px) {
@@ -197,66 +223,127 @@
       <div>
         <h3>What is JavaScript</h3>
         <p>
-          Non-technical could mean writing this as if it was a blog post you
-          would have wanted to read when you first started learning these
-          concepts or to a friend who wants a better understanding of what you
-          are learning. Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Tempora voluptate itaque unde architecto id numquam, aspernatur
-          ad quae nesciunt magni dignissimos, sequi exercitationem cupiditate
-          cum nulla ut. Nihil, ab nostrum.
+          * A programming language <br />
+          * Runs in the browser <br />
+          * Provides interactivity <br />
+          * Provides real-time content <br />
+          * Provides animation options
         </p>
 
-        <h3>Difference between HTML and CSS</h3>
+        <h3>The Front-end Trifecta: HTML, CSS and JavaScript</h3>
+
+        <div class="tri-factor">
+          <img src="../images/html_css_js.gif" width="600" alt="" />
+        </div>
+        <p class="js_gif">
+          (Source credit:
+          <a href="https://moz.com/blog/javascript-seo">Alexis Sanders</a>)
+        </p>
 
         <p>
-          An analogy to describe the differences between HTML and CSS. Lorem
-          ipsum dolor sit, amet consectetur adipisicing elit. Eveniet natus
-          obcaecati necessitatibus odit, aut at fuga aliquid velit vel, unde quo
-          quam temporibus nemo voluptate quidem eius quae recusandae architecto.
+          JavaScript, HTML and CSS are the building blocks of morden website
+          development. Anybody can create a website in 3 simple steps: <br />
+          1. Create webpages using HTML <br />
+          2. Style webpages with CSS <br />
+          3. Add everything else (such as interactions or animations) with
+          JavaScript
+          <br />
         </p>
 
         <h3>Control flow and loops</h3>
+        <div class="flow_control">
+          <p>
+            <strong>The computer chair example </strong><br /><br />
+            <img src="../images/control_flow.png" width="300" alt="" />
+
+            In preparation of upcoming bootcamp and long hours of sitting in
+            front of the computer, I decided to treat myself to a proper
+            computer chair, the kind that you can adjust the height up and down,
+            not the fancy ergonomic ones that cost thousands of dollors. I know,
+            such thing does exist. The chair got delivered today. So I decided
+            to put my
+            <em>control flow</em> and <em>loops</em> skills to test while I am
+            assembling the chair. <br />
+            First things first, I identified all the parts and pieces according
+            to the instructions to make sure I have everything I need and
+            nothing is missing. Then I followed each step on the manual from A -
+            E to put every single piece together. There were moments where I had
+            to fix a few bugs but I got there in the end. And here I am sitting
+            on my perfectly finished computer chair. But wait, where is the loop
+            in this? Well the chair comes with 5 individul wheels. I 'looped'
+            through each wheel until all 5 of them are properly fitted. Mission
+            accomplished!
+          </p>
+        </div>
+
+        <h3>What is DOM & JavaScript functions</h3>
 
         <p>
-          Explain control flow and loops using an example process from everyday
-          life, for example, 'waking up' or 'brushing your teeth'. (But not
-          those). Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Ullam iusto recusandae ut, sequi obcaecati dolore necessitatibus
-          numquam optio possimus ratione provident, esse nobis iste consectetur
-          ipsam nulla nemo deleniti culpa.
+          While Javascript is a programming language, the Document Object Model
+          (DOM) is a programming interface for web documents. We use DOM to
+          access the webpage and its elements, and as a result, to manipulate
+          the webpage using JavaScript or other programming languages. <br />
+          A simple example would be: whenever you click a button on a webpage,
+          there is always some type of interaction happenning. And more often
+          than not, this interaction is made possible through DOM. <br />
+          Let me show you what I mean. Hover your mouse over this button and see
+          what happens. <br /><br />
+          <button id="btn">Hover over me</button>
+          Did you see the text color change to red? I did that by using
+          <mark> document.getElementById('button')</mark> to access the button
+          element. Once I 'gained' access to the element, I am able to change
+          the style of that element. <br /><br />
         </p>
 
-        <h3>What is DOM</h3>
+        <h3>JavaScript functions</h3>
 
         <p>
-          Describe what the DOM is and an example of how you might interact with
-          it. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quae
-          modi illum! Reprehenderit magni corrupti laboriosam dicta aut
-          consequuntur in ut deserunt asperiores atque, quos, reiciendis nostrum
-          quibusdam, nam veritatis?
+          Now click this button to see what happens. <br />
+          <button onclick="myFunction()">Click me</button>
+          To display a message box when the button is clicked, I created a
+          function called <code>myFunction()</code>, this function does only one
+          thing: to show you the message. Congratulations! You just learned your
+          first JavaScript function. To sum it up, A JavaScript function is a
+          block of code, created to perform a specific task (eg., display a
+          message, change the text colour etc...). The function will be executed
+          when it's called, for example, when the button is clicked. Functions
+          are so helpful becuase they can be used many times with different
+          arguments, to produce different results.
         </p>
 
         <h3>Difference between accessing data from arrays and objects</h3>
 
         <p>
           Explain the difference between accessing data from arrays and objects.
-          Describe what the DOM is and an example of how you might interact with
-          it. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quae
-          modi illum! Reprehenderit magni corrupti laboriosam dicta aut
-          consequuntur in ut deserunt asperiores atque, quos, reiciendis nostrum
-          quibusdam, nam veritatis?
-        </p>
-
-        <h3>JavaScript functions</h3>
-        <p>
-          Explain what functions are and why they are helpful. Lorem, ipsum
-          dolor sit amet consectetur adipisicing elit. Temporibus blanditiis
-          porro tenetur, laborum, molestiae facilis, error doloribus dolorum
-          quam minima magnam! Alias nihil commodi eos amet ratione? Cupiditate,
-          praesentium iusto.
+          Array is used when we want to create and store a list of items in a
+          single varialbe. Items inside an array can be accessed by their
+          numerical position (index) in the list. Arrays use zero-based
+          indexing, so the first item in an array has an index of 0 (array[0]),
+          the second item an index of 1 (array[1]), and so on. Data stored in
+          objects are called properties, which consist keys and values. var
+          object = { key: 'value' }; To access data in objects, we could use
+          either dot notation (object.key) or bracket notation (object['key']).
         </p>
       </div>
     </section>
     <p></p>
+
+    <script>
+      const element = document.getElementById('btn')
+      element.addEventListener('mouseover', mouseOver)
+      element.addEventListener('mouseout', mouseOut)
+
+      function mouseOver() {
+        document.getElementById('btn').style.color = 'red'
+      }
+
+      function mouseOut() {
+        document.getElementById('btn').style.color = 'black'
+      }
+
+      function myFunction() {
+        alert('Hi! I am glad we clicked!')
+      }
+    </script>
   </body>
 </html>

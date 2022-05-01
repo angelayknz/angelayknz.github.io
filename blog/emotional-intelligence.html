@@ -36,7 +36,8 @@
       line-height: 1.25;
       font-weight: 500;
       font-size: 20px;
-      margin-top: 15px;
+      margin-top: 25px;
+      margin-bottom: 35px;
       padding: 10px 25px;
       color: transparent;
       background-image: linear-gradient(
@@ -95,15 +96,61 @@
 
     header {
       height: 430px;
-      background: url('../images/javascript.png') no-repeat center bottom;
+      background: url('../images/EQ.png') no-repeat center bottom;
       position: relative;
-      margin: 1px auto;
+      margin: 10px auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      text-align: center;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    th {
+      background-color: #65a28c;
+      color: white;
+    }
+
+    table tr {
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+      border-left: 1px solid black;
+    }
+
+    table tr:first-child {
+      border: 0;
+    }
+
+    .eq {
+      padding-left: 15px;
+    }
+
+    .iq_eq {
+      text-align: center;
+      margin-bottom: 15px;
     }
 
     @media screen and (max-width: 960px) {
       header {
-        background: url('../images/javascript_625.png') no-repeat center bottom;
         height: 390px;
+      }
+    }
+
+    @media screen and (max-width: 899px) {
+      header {
+        height: 300px;
+        background: url('../images/EQ_600.png') no-repeat center bottom;
       }
     }
 
@@ -140,8 +187,11 @@
       }
 
       header {
-        background: url('../images/javascript_300.png') no-repeat center bottom;
         height: 200px;
+      }
+
+      .iq_eq img {
+        width: 600px;
       }
     }
 
@@ -149,6 +199,11 @@
       header {
         height: 180px;
         position: relative;
+        display: none;
+      }
+
+      .iq_eq img {
+        display: none;
       }
 
       .header ul {
@@ -197,63 +252,105 @@
       <div>
         <h3>What is Emotional Intelligence</h3>
         <p>
-          Non-technical could mean writing this as if it was a blog post you
-          would have wanted to read when you first started learning these
-          concepts or to a friend who wants a better understanding of what you
-          are learning. Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Tempora voluptate itaque unde architecto id numquam, aspernatur
-          ad quae nesciunt magni dignissimos, sequi exercitationem cupiditate
-          cum nulla ut. Nihil, ab nostrum.
+          Emotional intelligence quotient, EQ or EI for short, is defined as
+          "the ability to perceive, use, understand, manage, and handle
+          emotions" in Wikipedia. Emotion is such a touchy subject in our
+          society. We avoid talking about it because it makes us and others feel
+          uncomfortable. We all had that feeling before we try to open up to
+          someone, that our heart rates start to go up and palms become sweaty.
+          According to Brené Brown, this feeling of 'uncertainty, risk, and
+          emotional exposure' is vulnerability. We don't like to be vulnerable
+          in front of others because vulnerability is perceived as a sign of
+          weakness. However, in her book <em>Daring Greatly</em>, Dr. Brown
+          argues that 'Vulnerability is the birthplace of love, belonging, joy,
+          courage, empathy, and creativity.'
+        </p>
+        <p>
+          One way of understanding emotional intelligence is the 'mixed model'.
+          This model sees EI as a collection of competencies and skills that can
+          be learned and developed. There are five constructs of EI in this
+          model. Each construct include a set of emotional competencies.
+        </p>
+        <div class="eq">
+          <p>
+            * <strong>Self-awareness</strong> – the ability to know one's
+            emotions, strengths, weaknesses, drives, values and goals and
+            recognize their impact on others while using gut feelings to guide
+            decisions. <br />
+            <br />
+            * <strong>Self-regulation</strong> – involves controlling or
+            redirecting one's disruptive emotions and impulses and adapting to
+            changing circumstances. <br />
+            <br />
+            * <strong>Social skill</strong> – managing relationships to get
+            along with others
+            <br />
+            <br />
+            * <strong>Empathy</strong> – considering other people's feelings
+            especially when making decisions <br />
+            <br />
+            * <strong>Motivation</strong> – being aware of what motivates them.
+          </p>
+        </div>
+
+        <h3>EQ or IQ? That is the question!</h3>
+
+        <table>
+          <tr>
+            <th>EQ</th>
+            <th>IQ</th>
+          </tr>
+          <tr>
+            <td>Empathy: ability to feel</td>
+            <td>Analysis: ability to think</td>
+          </tr>
+          <tr>
+            <td>Get through life</td>
+            <td>Get through school</td>
+          </tr>
+          <tr>
+            <td>Self-Control</td>
+            <td>Patterns and Logic</td>
+          </tr>
+          <tr>
+            <td>Social Awareness</td>
+            <td>Critical Thinking</td>
+          </tr>
+          <tr>
+            <td>Self-Reflection</td>
+            <td>Concept and Design</td>
+          </tr>
+          <tr>
+            <td>Manage Relationships</td>
+            <td>Technological Expertise</td>
+          </tr>
+          <tr>
+            <td>Can be learned</td>
+            <td>Can not be taught</td>
+          </tr>
+        </table>
+        <p>
+          IQ measures the ability to solve problems, use logic, and grasp or
+          communicate complex ideas. EQ measures the ability to recognize
+          emotion in yourself and others, and to use that awareness to guide
+          your decisions. Both kinds of intelligence can influence the job
+          performance, relationships, and overall well-being. Understanding and
+          developing both kinds of intelligence is critical to success in life.
         </p>
 
-        <h3>Why EQ is important</h3>
+        <h3>Why is EQ important</h3>
+
+        <div class="iq_eq">
+          <img src="../images/iq_eq.jpeg" alt="" width="600" />
+        </div>
 
         <p>
-          An analogy to describe the differences between HTML and CSS. Lorem
-          ipsum dolor sit, amet consectetur adipisicing elit. Eveniet natus
-          obcaecati necessitatibus odit, aut at fuga aliquid velit vel, unde quo
-          quam temporibus nemo voluptate quidem eius quae recusandae architecto.
-        </p>
-
-        <h3>Lorem ipsum dolor sit amet</h3>
-
-        <p>
-          Explain control flow and loops using an example process from everyday
-          life, for example, 'waking up' or 'brushing your teeth'. (But not
-          those). Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Ullam iusto recusandae ut, sequi obcaecati dolore necessitatibus
-          numquam optio possimus ratione provident, esse nobis iste consectetur
-          ipsam nulla nemo deleniti culpa.
-        </p>
-
-        <h3>Lorem, ipsum dolor</h3>
-
-        <p>
-          Describe what the DOM is and an example of how you might interact with
-          it. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quae
-          modi illum! Reprehenderit magni corrupti laboriosam dicta aut
-          consequuntur in ut deserunt asperiores atque, quos, reiciendis nostrum
-          quibusdam, nam veritatis?
-        </p>
-
-        <h3>Difference between</h3>
-
-        <p>
-          Explain the difference between accessing data from arrays and objects.
-          Describe what the DOM is and an example of how you might interact with
-          it. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quae
-          modi illum! Reprehenderit magni corrupti laboriosam dicta aut
-          consequuntur in ut deserunt asperiores atque, quos, reiciendis nostrum
-          quibusdam, nam veritatis?
-        </p>
-
-        <h3>Lorem ipsum dolor sit</h3>
-        <p>
-          Explain what functions are and why they are helpful. Lorem, ipsum
-          dolor sit amet consectetur adipisicing elit. Temporibus blanditiis
-          porro tenetur, laborum, molestiae facilis, error doloribus dolorum
-          quam minima magnam! Alias nihil commodi eos amet ratione? Cupiditate,
-          praesentium iusto.
+          EQ affects every area of our life, from academic achievement, to
+          workplace performance; from dealing with personal relationships to
+          managing life-altering events. We humans simply cannot survive without
+          emotions. So it is better to deal with it than to avoid it altogether.
+          Luckily, we have so many tools and technologies to help us understand
+          and manage our emotions.
         </p>
       </div>
     </section>

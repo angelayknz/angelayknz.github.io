@@ -110,20 +110,48 @@
       display: flex;
       text-align: center;
       margin-top: 35px;
+      
     }
 
     .js_gif {
       text-align: center;
       font-size: 13px;
+      color: grey;
+     
     }
 
     .js_gif a {
       text-decoration: none;
+      color: grey;
     }
 
     .flow_control img {
       float: right;
       margin-left: 25px;
+    }
+
+    table {
+  border-collapse: collapse;
+  width: 70%;
+  margin-top: 25px;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #588273;
+  color: white;
+}
+
+table tr {
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+      border-left: 1px solid black;
     }
 
     @media screen and (max-width: 960px) {
@@ -171,6 +199,10 @@
       }
     }
 
+    table {
+      width: 100%;
+    }
+
     @media screen and (max-width: 425px) {
       header {
         height: 180px;
@@ -190,7 +222,13 @@
         width: 55px;
         text-align: center;
       }
+
+      .tri-factor, .js_gif {
+      display: none;
     }
+    }
+
+    
   </style>
 
   <body>
@@ -241,7 +279,7 @@
         </p>
 
         <p>
-          JavaScript, HTML and CSS are the building blocks of morden website
+          JavaScript, HTML and CSS are the building blocks of modern website
           development. Anybody can create a website in 3 simple steps: <br />
           1. Create webpages using HTML <br />
           2. Style webpages with CSS <br />
@@ -253,13 +291,15 @@
         <h3>Control flow and loops</h3>
         <div class="flow_control">
           <p>
-            <strong>The computer chair example </strong><br /><br />
+            <strong
+              >The control flow and loops of computer chair assembling</strong
+            ><br /><br />
             <img src="../images/control_flow.png" width="300" alt="" />
 
             In preparation of upcoming bootcamp and long hours of sitting in
             front of the computer, I decided to treat myself to a proper
             computer chair, the kind that you can adjust the height up and down,
-            not the fancy ergonomic ones that cost thousands of dollors. I know,
+            not the fancy ergonomic ones that cost thousands of dollars. I know,
             such thing does exist. The chair got delivered today. So I decided
             to put my
             <em>control flow</em> and <em>loops</em> skills to test while I am
@@ -270,7 +310,7 @@
             E to put every single piece together. There were moments where I had
             to fix a few bugs but I got there in the end. And here I am sitting
             on my perfectly finished computer chair. But wait, where is the loop
-            in this? Well the chair comes with 5 individul wheels. I 'looped'
+            in this? Well the chair comes with 5 individual wheels. I 'looped'
             through each wheel until all 5 of them are properly fitted. Mission
             accomplished!
           </p>
@@ -284,45 +324,93 @@
           access the webpage and its elements, and as a result, to manipulate
           the webpage using JavaScript or other programming languages. <br />
           A simple example would be: whenever you click a button on a webpage,
-          there is always some type of interaction happenning. And more often
+          there is always some type of interactions happening. And more often
           than not, this interaction is made possible through DOM. <br />
           Let me show you what I mean. Hover your mouse over this button and see
           what happens. <br /><br />
           <button id="btn">Hover over me</button>
-          Did you see the text color change to red? I did that by using
-          <mark> document.getElementById('button')</mark> to access the button
-          element. Once I 'gained' access to the element, I am able to change
-          the style of that element. <br /><br />
+          Did you see the text color change to red? I did that by using DOM to
+          access the button element. Once I 'gained' access to the 'button'
+          element/object, I am able to change the style of that element.
+          <br /><br />
         </p>
 
         <h3>JavaScript functions</h3>
 
         <p>
           Now click this button to see what happens. <br />
-          <button onclick="myFunction()">Click me</button>
-          To display a message box when the button is clicked, I created a
-          function called <code>myFunction()</code>, this function does only one
-          thing: to show you the message. Congratulations! You just learned your
-          first JavaScript function. To sum it up, A JavaScript function is a
-          block of code, created to perform a specific task (eg., display a
-          message, change the text colour etc...). The function will be executed
-          when it's called, for example, when the button is clicked. Functions
-          are so helpful becuase they can be used many times with different
-          arguments, to produce different results.
+          <button onclick="myFunction()">Click me</button> Did you see the
+          message? I created that by using JavaScript function
+          <code>myFunction()</code>. This function is a block of code (see
+          below). Once you click on the button, this block of code is invoked
+          and will be executed to perform the task, which is to display the
+          message. <br />
+          <br />
+        </p>
+        <div>
+          <img src="../images/code.png" alt="" />
+        </div>
+        <p>
+          <br />
+          Congratulations! You just learned your first JavaScript function. To
+          sum it up, A JavaScript function is a block of code, created to
+          perform a specific task (eg., display a message, change the text
+          colour etc...). The function will be executed when it's 'called'.
+          Functions are so helpful because they can be used many times with
+          different arguments, to produce different results.
         </p>
 
         <h3>Difference between accessing data from arrays and objects</h3>
 
         <p>
-          Explain the difference between accessing data from arrays and objects.
           Array is used when we want to create and store a list of items in a
-          single varialbe. Items inside an array can be accessed by their
-          numerical position (index) in the list. Arrays use zero-based
+          single variable. Items inside an array can be accessed by their
+          numerical position called index in the list. Arrays use zero-based
           indexing, so the first item in an array has an index of 0 (array[0]),
           the second item an index of 1 (array[1]), and so on. Data stored in
           objects are called properties, which consist keys and values. var
-          object = { key: 'value' }; To access data in objects, we could use
-          either dot notation (object.key) or bracket notation (object['key']).
+          object = { key: 'value' }; To access data in objects, we use either
+          dot notation (object.key) or bracket notation (object['key']).
+
+          <table>
+            <tr>
+            <th></th>
+              <th>Arrays</th>
+              <th>Objects</th>
+              
+            </tr>
+            <tr>
+            <td> </td>
+              <td>var array = ['value1', 'value2', 'value3'];</td>
+              <td>var object = {
+            key: 'value'
+          };</td>
+           
+            </tr>
+            <tr>
+            <td></td>
+              <td>var person = ['Peter', 'Bob', 'Sue'];</td>
+              <td>var person = {
+            name: 'Bob'
+          };</td>
+              
+            
+            </tr>
+            <tr>
+            <td></td>
+              <td>person[1] // returns Bob</td>
+              <td>person.name //returns Bob</td>
+              
+             
+            </tr>
+            <tr>
+            <td></td>
+              <td></td>
+              <td>person['name'] // returns Bob</td>
+            
+             
+          </tr>
+          </table>
         </p>
       </div>
     </section>
@@ -342,7 +430,7 @@
       }
 
       function myFunction() {
-        alert('Hi! I am glad we clicked!')
+        alert('Nice click!')
       }
     </script>
   </body>

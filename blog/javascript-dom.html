@@ -94,9 +94,9 @@
     }
 
     mark {
-      background: wheat;
+      background: rgb(224, 222, 222);
       border-radius: 5px;
-      padding: 1px 3px;
+      padding: 2px 3px;
     }
 
     header {
@@ -331,12 +331,12 @@
             to fix a few bugs but I got there in the end. And here I am sitting
             on my perfectly finished computer chair. But wait, where is the loop
             in this? Well the chair comes with 5 individual wheels. I 'looped'
-            through each wheel until all 5 of them are properly fitted. Mission
-            accomplished!
+            through (literally) each wheel until all 5 of them are properly
+            fitted. Mission accomplished!
           </p>
         </div>
 
-        <h3>What is DOM & JavaScript functions</h3>
+        <h3>What is DOM</h3>
 
         <p>
           While Javascript is a programming language, the Document Object Model
@@ -350,12 +350,13 @@
           what happens. <br /><br />
           <button id="btn">Click me</button>
           Did you see the text color change to red? I did that by using DOM to
-          access the button element. Once I 'gained' access to the 'button'
-          element/object, I am able to change the style of that element.
-          <br /><br />
+          access the button element
+          <mark>(document.getElementById('button').style.color = 'red')</mark>.
+          Once I 'gained' access to the 'button' object, I am able to change the
+          color of that element and do so much more. <br /><br />
         </p>
 
-        <h3>JavaScript functions</h3>
+        <h3>What are functions</h3>
 
         <p>
           Now click this button
@@ -388,10 +389,11 @@
           single variable. Items inside an array can be accessed by their
           numerical position called index in the list. Arrays use zero-based
           indexing, so the first item in an array has an index of 0 (array[0]),
-          the second item an index of 1 (array[1]), and so on. Data stored in
-          objects are called properties, which consist keys and values. var
-          object = { key: 'value' }; To access data in objects, we use either
-          dot notation (object.key) or bracket notation (object['key']).
+          the second item an index of 1 (array[1]), and so on. <br />
+          Data stored in objects are called properties, which consist keys and
+          values. var object = { key: 'value' }; To access data in objects, we
+          use either dot notation (object.key) or bracket notation
+          (object['key']).
         </p>
         <table>
           <tr>
@@ -407,11 +409,11 @@
             <td>var person = { name: 'Bob' };</td>
           </tr>
           <tr>
-            <td>person[1] // returns Bob</td>
+            <td>person[0] // returns Peter</td>
             <td>person.name //returns Bob</td>
           </tr>
           <tr>
-            <td></td>
+            <td>person[1] // returns Bob</td>
             <td>person['name'] // returns Bob</td>
           </tr>
         </table>

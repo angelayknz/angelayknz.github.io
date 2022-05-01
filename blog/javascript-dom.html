@@ -106,18 +106,27 @@
       margin: 1px auto;
     }
 
-    .tri-factor {
+    .tri-factor,
+    .function {
       display: flex;
-      text-align: center;
+      justify-content: center;
+    }
+
+    .tri-factor {
       margin-top: 35px;
-      
+    }
+
+    .tri-factor img,
+    .function img {
+      max-width: 100%;
+      height: auto;
     }
 
     .js_gif {
       text-align: center;
       font-size: 13px;
       color: grey;
-     
+      padding-top: 0;
     }
 
     .js_gif a {
@@ -131,24 +140,27 @@
     }
 
     table {
-  border-collapse: collapse;
-  width: 70%;
-  margin-top: 25px;
-}
+      border-collapse: collapse;
+      width: 70%;
+      margin-top: 25px;
+    }
 
-th, td {
-  text-align: center;
-  padding: 8px;
-}
+    th,
+    td {
+      text-align: center;
+      padding: 8px;
+    }
 
-tr:nth-child(even){background-color: #f2f2f2}
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
 
-th {
-  background-color: #588273;
-  color: white;
-}
+    th {
+      background-color: #588273;
+      color: white;
+    }
 
-table tr {
+    table tr {
       border-bottom: 1px solid black;
       border-right: 1px solid black;
       border-left: 1px solid black;
@@ -197,10 +209,10 @@ table tr {
         background: url('../images/javascript_300.png') no-repeat center bottom;
         height: 200px;
       }
-    }
 
-    table {
-      width: 100%;
+      table {
+        width: 100%;
+      }
     }
 
     @media screen and (max-width: 425px) {
@@ -223,12 +235,10 @@ table tr {
         text-align: center;
       }
 
-      .tri-factor, .js_gif {
-      display: none;
+      .flow_control img {
+        margin-bottom: 15px;
+      }
     }
-    }
-
-    
   </style>
 
   <body>
@@ -271,7 +281,7 @@ table tr {
         <h3>The Front-end Trifecta: HTML, CSS and JavaScript</h3>
 
         <div class="tri-factor">
-          <img src="../images/html_css_js.gif" width="600" alt="" />
+          <img src="../images/html_css_js.gif" alt="" />
         </div>
         <p class="js_gif">
           (Source credit:
@@ -328,7 +338,7 @@ table tr {
           than not, this interaction is made possible through DOM. <br />
           Let me show you what I mean. Hover your mouse over this button and see
           what happens. <br /><br />
-          <button id="btn">Hover over me</button>
+          <button id="btn">Click me</button>
           Did you see the text color change to red? I did that by using DOM to
           access the button element. Once I 'gained' access to the 'button'
           element/object, I am able to change the style of that element.
@@ -338,22 +348,23 @@ table tr {
         <h3>JavaScript functions</h3>
 
         <p>
-          Now click this button to see what happens. <br />
-          <button onclick="myFunction()">Click me</button> Did you see the
-          message? I created that by using JavaScript function
-          <code>myFunction()</code>. This function is a block of code (see
-          below). Once you click on the button, this block of code is invoked
-          and will be executed to perform the task, which is to display the
-          message. <br />
+          Now click this button
+          <button onclick="myFunction()">Click me</button> to see what happens.
+          <br />
+          Did you see the message? I created the message by using the JavaScript
+          function called
+          <code>myFunction()</code>. Once you click on the button, this block of
+          code is invoked and executed to perform a task, which is to display
+          the message. Congratulations! You just learned your first JavaScript
+          function.<br />
           <br />
         </p>
-        <div>
+        <div class="function">
           <img src="../images/code.png" alt="" />
         </div>
         <p>
           <br />
-          Congratulations! You just learned your first JavaScript function. To
-          sum it up, A JavaScript function is a block of code, created to
+          To sum it up, A JavaScript function is a block of code, created to
           perform a specific task (eg., display a message, change the text
           colour etc...). The function will be executed when it's 'called'.
           Functions are so helpful because they can be used many times with
@@ -371,50 +382,31 @@ table tr {
           objects are called properties, which consist keys and values. var
           object = { key: 'value' }; To access data in objects, we use either
           dot notation (object.key) or bracket notation (object['key']).
-
-          <table>
-            <tr>
-            <th></th>
-              <th>Arrays</th>
-              <th>Objects</th>
-              
-            </tr>
-            <tr>
-            <td> </td>
-              <td>var array = ['value1', 'value2', 'value3'];</td>
-              <td>var object = {
-            key: 'value'
-          };</td>
-           
-            </tr>
-            <tr>
-            <td></td>
-              <td>var person = ['Peter', 'Bob', 'Sue'];</td>
-              <td>var person = {
-            name: 'Bob'
-          };</td>
-              
-            
-            </tr>
-            <tr>
-            <td></td>
-              <td>person[1] // returns Bob</td>
-              <td>person.name //returns Bob</td>
-              
-             
-            </tr>
-            <tr>
-            <td></td>
-              <td></td>
-              <td>person['name'] // returns Bob</td>
-            
-             
-          </tr>
-          </table>
         </p>
+        <table>
+          <tr>
+            <th>Arrays</th>
+            <th>Objects</th>
+          </tr>
+          <tr>
+            <td>var array = ['value1', 'value2', 'value3'];</td>
+            <td>var object = { key: 'value' };</td>
+          </tr>
+          <tr>
+            <td>var person = ['Peter', 'Bob', 'Sue'];</td>
+            <td>var person = { name: 'Bob' };</td>
+          </tr>
+          <tr>
+            <td>person[1] // returns Bob</td>
+            <td>person.name //returns Bob</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>person['name'] // returns Bob</td>
+          </tr>
+        </table>
       </div>
     </section>
-    <p></p>
 
     <script>
       const element = document.getElementById('btn')

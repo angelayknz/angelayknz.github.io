@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Neuroplasticity</title>
+  </head>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    * {
+      max-width: 1200px;
+      position: relative;
+
+      font-family: 'Roboto', sans-serif;
+      margin: 0 auto;
+    }
+
+    body {
+      font-size: 16px;
+      font-weight: 300;
+      padding: 0;
+      width: 80%;
+
+      margin: 0 auto;
+    }
+
+    p {
+      padding: 12px 5px;
+
+      letter-spacing: 0.8px;
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-top: 15px;
+      padding: 10px 25px;
+      color: transparent;
+      background-image: linear-gradient(
+        to right,
+        #553c9a,
+        #ee4b2b,
+        #00c2cb,
+        #ff7f50,
+        #553c9a
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 200%;
+      background-position: -200%;
+      transition: all ease-in-out 2s;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    h3:hover {
+      background-position: 200%;
+    }
+
+    .main {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .header ul {
+      align-items: center;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .header ul li {
+      display: inline-block;
+      list-style: none;
+      width: 90px;
+      overflow: hidden;
+    }
+
+    .header ul li a {
+      text-decoration: none;
+      padding: 0 10px;
+      color: #34495e;
+      width: 90px;
+      display: block;
+      padding: 25px 5px;
+      text-align: center;
+    }
+
+    .main-nav a:hover {
+      color: #718daa;
+    }
+
+    .hero,
+    .growth_mindset {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero img,
+    .growth_mindset img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    blockquote {
+      background: #f9f9f9;
+      border-left: 10px solid #f1948a;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      line-height: 1.6em;
+    }
+    blockquote:before {
+      color: #ccc;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+
+    blockquote p {
+      display: inline;
+    }
+
+    .quote {
+      width: 90%;
+    }
+
+    footer {
+      height: 40px;
+    }
+
+    strong {
+      color: salmon;
+      font-size: 16px;
+    }
+
+    h6 {
+      color: #348fb2;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      color: rgb(42, 39, 39);
+      margin: 35px auto;
+    }
+
+    th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+      background-color: #ec7063;
+      height: 1px;
+      color: white;
+    }
+
+    td {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fdedec;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f1948a;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .center img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      header {
+        height: 230px;
+
+        position: relative;
+      }
+
+      .header ul {
+        width: 100%;
+      }
+
+      .header ul li {
+        width: 70px;
+        text-align: center;
+      }
+
+      .header ul li a {
+        width: 55px;
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 625px) {
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      .header ul {
+        font-size: 15px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+      }
+
+      .header ul li {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .header ul li a {
+        display: inline-block;
+        text-align: center;
+      }
+
+      p {
+        text-align: left;
+        line-height: 1.3;
+      }
+    }
+  </style>
+
+  <body>
+    <nav class="header">
+      <ul class="main-nav">
+        <li><a href="https://angelayknz.github.io/">Home</a></li>
+        <li>
+          <a href="https://angelayknz.github.io/index.html#blog_post">Blog</a>
+        </li>
+        <li>
+          <a
+            href="https://angelayknz.github.io/blog/profile.html"
+            target="_blank"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="https://angelayknz.github.io/index.html#contact_us"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <img src="../images/growth_hero.png" alt="" />
+    </div>
+
+    <section class="main">
+      <div>
+        <h3>What is neuroplasticity</h3>
+        <p>
+          Neuroplasticity is the ability of the brain to change throughout life.
+          Neuroplasticity allows changes in the structure of neurons, the
+          strength of neural connections and pathways, and the physical
+          structure of the brain. It can even cause the creation of new neurons
+          (neurogenesis). <br /><br />
+          The average human brain contains about 86 billion neurons, and each
+          one is connected to around 1,000 others, creating an incredibly vast
+          communication network. Each neuron might receive input from thousands
+          of others before firing its own signal. The more often the connections
+          between specific neurons are activated, the stronger the attractions
+          become among them. The pathways formed and the strength of the
+          connection during communication are what are important in learning,
+          memory, and recovery from a brain injury.
+        </p>
+
+        <div class="container">
+          <article class="card">
+            <div class="list">
+              <h6>How does neuroplasticity work?</h6>
+              <p>
+                When we engage in different experiences throughout life, the
+                brain changes and adapts. Sometimes, this involves strengthening
+                or weakening pathways. Other times, it might move certain
+                functions from one area to another, such as if a part of the
+                brain has been damaged.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="list">
+              <h6>Why is neuroplasticity important?</h6>
+              <p>
+                Without neuroplasticity, it would be difficult to learn or
+                otherwise improve brain function. Neuroplasticity also aids in
+                recovery from brain-based injuries and illnesses.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="list">
+              <h6>How do we increase neuroplasticity?</h6>
+              <p>
+                Learning new things, traveling places you've never been, and
+                engaging in creative activities can all help increase
+                neuroplasticity. Getting adequate sleep and regular exercise
+                also support brain growth and health.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <h3>What is Growth Mindset</h3>
+        <div class="quote">
+          <blockquote>
+            The growth mindset is based on the belief that your basic qualities
+            are things you can cultivate through your efforts. Although people
+            may differ in every which way in their initial talents and
+            aptitudes, interests, or temperaments, everyone can change and grow
+            through application and experience. &emsp; &emsp; &emsp; -- Carol
+            Dweck
+          </blockquote>
+        </div>
+
+        <p>
+          A growth mindset means that you believe your intelligence and talents
+          can be developed over time. A fixed mindset means that you believe
+          intelligence is fixed—so if you’re not good at something, you might
+          believe you’ll never be good at it. The way we think about our
+          intellect and talents not only affects the way we feel, it can also
+          affect what we achieve, whether we stick to new habits, or if we will
+          go on to develop new skills.
+        </p>
+        <h3>How to develop a growth mindset</h3>
+        <table class="center">
+          <tr>
+            <th>
+              <img src="../images/sad_brain.png" alt="" width="300" />
+            </th>
+            <th>
+              <img src="../images/happy_brain.png" alt="" width="300" />
+            </th>
+          </tr>
+          <tr>
+            <th>Instead of Thinking</th>
+            <th>Think This</th>
+          </tr>
+          <tr>
+            <td>I can't do this.</td>
+            <td>I'm still learning. I'll keep trying.</td>
+          </tr>
+          <tr>
+            <td>I'm not good at this.</td>
+            <td>What can I learn to get better at this?</td>
+          </tr>
+          <tr>
+            <td>It's good enough.</td>
+            <td>Is this the best I can do?</td>
+          </tr>
+          <tr>
+            <td>It's too hard.</td>
+            <td>With more practice it will get easier.</td>
+          </tr>
+          <tr>
+            <td>I'm afraid of making a mistake.</td>
+            <td>Mistakes are how I learn and get better.</td>
+          </tr>
+          <tr>
+            <td>They are better at it than I am.</td>
+            <td>What can I learn from them?</td>
+          </tr>
+          <tr>
+            <td>I don't know how.</td>
+            <td>I can learn how.</td>
+          </tr>
+          <tr>
+            <td>I can't make this any better.</td>
+            <td>I can always find ways to improve.</td>
+          </tr>
+          <tr>
+            <td>I don't like challenges.</td>
+            <td>Challenges make me better.</td>
+          </tr>
+          <tr>
+            <td>I give up.</td>
+            <td>I'll try a different way.</td>
+          </tr>
+        </table>
+
+        <p>
+          In conclusion, a growth mindset means one embraces challenges,
+          persists in the face of setbacks, takes responsibility for their words
+          and actions, and acknowledges that effort is the path toward mastery.
+          It is basically the reason why “practice makes perfect." By choosing
+          to make the extra effort to build a growth mindset, you can make your
+          mental processes work for you, resulting in a greater likelihood that
+          you get the results you're looking for and live the life you want to
+          live.
+        </p>
+      </div>
+    </section>
+
+    <footer></footer>
+  </body>
+</html>

@@ -29,7 +29,7 @@
 
     p {
       padding: 12px 5px;
-
+      text-align: left;
       letter-spacing: 0.8px;
       line-height: 1.5;
     }
@@ -62,6 +62,7 @@
 
     .main {
       margin-top: 20px;
+      text-align: center;
     }
 
     .header ul {
@@ -102,6 +103,30 @@
 
     footer {
       height: 40px;
+    }
+
+    .solution {
+      display: inline-block;
+      margin-top: 50px;
+    }
+
+    .solution_img img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 35px;
+    }
+
+    .solution_text {
+      margin-left: 50px;
+    }
+
+    span {
+      color: #718daa;
+      margin-bottom: 35px;
+    }
+
+    .cat {
+      margin-top: 35px;
     }
 
     @media screen and (max-width: 425px) {
@@ -190,81 +215,86 @@
       <div>
         <h3>The blocks</h3>
         <p>
-          Tell your non-tech friend a story about a time you: were blocked on a
-          simple problem. elegantly solved a problem. <br /><br />
-
-          In both cases, explain: What was the problem? What problem-solving
-          techniques did you use? How did you feel throughout the process? What
-          did you learn?
+          <strong>Block 1: </strong> In sprint 3, I had a couple of blocks while
+          doing the JavaScript Intro Challenge. The first block happened in
+          Challenge 5 - Conditionals: the if and if...else statement. We are
+          required to write two functions `isMatch` and `isAMatch`to compare two
+          values. After I wrote my code, I console.logged each of them in the
+          browser to check if the code is working and they both worked
+          perfectly. But when I ran my code in the terminal, both functions
+          failed. The error message reads: function was not defined. Well that
+          didn't help. So I asked Google to show me how other people have solved
+          the problem. Then I re wrote my code in a different way but the
+          exactly same thing happened. At this point, I am certain it's my
+          computer's fault. I decided to leave it for now.<br />
+          <br />
+          A couple of days later, we had a home group meeting. During the
+          meeting, I asked our group facilitator John for help. We did a 1:1
+          coaching call so John could have a look at my code. And guess what?!
+          It was indeed my fault, not the computer's. I missed an 'A' in the
+          second function's name. It was a spelling error!!! As soon as I
+          changed the name of the function, the problems solved.
+        </p>
+        <div class="cat">
+          <img src="/images/cat.GIF" alt="" />
+        </div>
+        <span>me trying to to solve all my problems</span>
+        <p>
+          <strong>Block 2: </strong> Another block happened in Challenge 7 -
+          Loops Q4 & Q5. I tried all the techniques I used previouly and more. I
+          wrote pseudocode, googled, read error messages, re-wrote the code in a
+          different way, tried to read through on the discord channel to see if
+          others had similar problems. But nothing worked. So I reached out to
+          the discord community. And sure enough, a fellow student who had the
+          same problem shared what worked for them. While their solution did not
+          immediately work for me, it pointed me to a different direction. I
+          kept it running at the back of my mind and carried on with other
+          tasks. I tried to tackle the problem again the next day, still not
+          working. So I pondered on it for another day. I think it might be the
+          third or the fourth day that all of a sudden it dawned on me what the
+          solution was. It was so clear to me like an AHA moment. Lo and behold,
+          it was the right solution to passed the test.
         </p>
 
+        <h3>Have you tried explaining the problem to the rubber duck?</h3>
         <p>
-          In sprint 3, I had a couple of blocks while doing the JavaScript
-          Challenge. The first time it happened was in Challenge 5 -
-          Conditionals, Q1 & Q2, the if...else statement. <br />
-          After I write the code, I tried console.logging it and check if the
-          code is working and it did. But when I run the check sheet, it won't
-          pass. The erro message does not provide enough information for me to
-          investigate. I googled to see how other people solved the prolem and
-          tried rewrite my code in a different way but the same thing happened.
-          So one day after the home group meeting, I asked the facilitator to
-          check the code for me. We had a coaching call and I shared my screen.
-          In the end, it was the code that's the problem, it was the function
-          name. I used the same function name for both challenges, that's why it
-          won't pass the tests. As soon as I changed the name of the challenge,
-          the problems solved.
+          Apparantly, web developpers talk to rubber ducky about their problems.
+          Who knew! I have not tried this technique yet so I cannot testify to
+          that. But I am intrigued by what the rubber duck will do next time I
+          encounter a block.
         </p>
+        <div class="solution">
+          <div class="solution_img">
+            <img src="../images/ducky.png" alt="" />
+          </div>
+
+          <h3>Other problem-sovling techniques</h3>
+          <div class="solution_text">
+            <p>
+              <br /><br />
+              - Pseudocode <br />
+              - Trying something <br />
+              - Reading error messages <br />
+              - Console.logging <br />
+              - Googling <br />
+              - Asking your peers for help <br />
+              - Asking coaches for help <br />
+              - Improving your process with reflection
+            </p>
+          </div>
+        </div>
 
         <p>
-          Another block happened in Challenge 7 - Loops Q4 & Q5. I tried all the
-          techniques I used previouly and nothing worked. I wrote pseudocode,
-          googled, reading error message, re-writing the code in a different
-          way, try to read through on the discord channel if others had the same
-          problems and how they solved the problems. I can see that many
-          students were stuck on these questions, after all, they are stretch
-          materials. But nobody had the same problem I had. So I asked for help
-          on the discord channel. A fellow student who had the same problem
-          replied to my message. The answer didn't solve my problem immediately
-          but it pointed me to a different direction. I sat on it for a day and
-          carried on with other tasks. I tried again the next day, still not
-          working. I pondered for another day. I think it was the third day that
-          it dawned on me that I finally understood what the solution is. So I
-          tried a different way to write the code. And sure enough, it passed
-          the test.
+          I tried all of the techniques above during the code challenges, except
+          the rubber ducky method. I find googling is the most efficient way to
+          solve problems. Because chances are, whatever problems we are having
+          right now, other people already had them and had found solutions for
+          them. Google normally solve 90 percent of my problems. Try asking the
+          question in a different way will solve another 5 percent of the
+          problems. As for the last 5 percent, ask for input from the real
+          people that either had the similar experience or are on the same
+          journey as you.
         </p>
-        <p>
-          <br /><br />
-          - Pseudocode <br />
-          - Trying something <br />
-          - Rubber ducky method <br />
-          - Reading error messages <br />
-          - Console.logging <br />
-          - Googling <br />
-          - Asking your peers for help <br />
-          - Asking coaches for help <br />
-          - Improving your process with reflection
-        </p>
-
-        <h3>My reflections</h3>
-
-        <p>
-          I tried almost all of the techniques above during the code challenges,
-          except the rubber ducky method. I find googling is the most effient
-          way of problem sovling. Chances are whatever problem we have, other
-          people have already had it and had came up with a solution for the
-          problem. Normally Google can solve 90 percent of the problems. If not,
-          try to ask the question in a different way, it will solve a further 5%
-          of the problems. As for the remaining 5 percent, ask for help for your
-          specific question from other people, students, collegues, friends or
-          forums.
-        </p>
-
-        <!-- <h3>Rubber ducky debugging</h3>
-
-        <p>
-          Who knew?! The unassuming little rubber ducky has taken the tech
-          industry by storm.
-        </p> -->
       </div>
     </section>
 

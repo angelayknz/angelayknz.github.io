@@ -4,96 +4,12 @@
   line-height: 1.6;
   margin: 0;
 }
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-h2,
-h3,
-a {
-  color: #34495e;
-}
-
-a {
-  text-decoration: none;
-}
-
-.logo {
-  margin: 0;
-  font-size: 1.45em;
-}
-
-.main-nav {
-  margin-top: 5px;
-}
-
-.logo a,
-.main-nav a {
-  padding: 10px 15px;
-  text-transform: uppercase;
-  text-align: center;
-  display: block;
-  color: #34495e;
-}
-
-.logo a {
-  font-family: 'Amaranth', sans-serif !important;
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #34495e;
-}
-
-.blog ul li {
-  color: #34495e;
-  border: 1px solid wheat;
-  border-radius: 10px;
-  padding: 5px;
-  margin-top: 5px;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 50%);
-  background: radial-gradient(circle at 17% 98%, #d2f7f6, #d2f7ea, #f5e5e5);
-}
-
-.main-nav a {
-  color: #34495e;
-  font-size: 0.99em;
-}
-
-.main-nav a:hover {
-  color: #718daa;
-}
-
-.nav {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  border: 1px solid #a2a2a2;
-  background-color: #f4f4f4;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-header {
-  min-height: 520px;
-  background: white url(../images/hero.jpeg) no-repeat center bottom;
-  position: relative;
-  margin-top: 1.5em;
-}
-
-header div.Hero {
-  position: absolute;
-  width: 42%;
-  top: 130px;
-  left: 55%;
-}
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #555;
-  margin: 0;
   padding: 0;
 }
 
@@ -140,9 +56,159 @@ a.btn:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.about_425 p,
-.blog_425 p {
-  text-align: justify;
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2,
+h3,
+a {
+  color: #34495e;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.45em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15px;
+}
+
+nav ul li {
+  float: right;
+}
+
+.main-nav {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  color: #34495e;
+}
+
+.logo a {
+  font-family: 'Amaranth', sans-serif !important;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #34495e;
+}
+
+.blog ul li {
+  color: #34495e;
+  border: 1px solid wheat;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 50%);
+  background: radial-gradient(circle at 17% 98%, #d2f7f6, #d2f7ea, #f5e5e5);
+}
+
+.main-nav a {
+  color: #34495e;
+  font-size: 0.99em;
+}
+
+.main-nav a:hover {
+  color: #718daa;
+}
+
+header {
+  min-height: 520px;
+  background: white url(../images/hero.jpeg) no-repeat center bottom;
+  position: relative;
+  margin-top: 1.5em;
+}
+
+header div.Hero {
+  position: absolute;
+  width: 42%;
+  top: 130px;
+  left: 55%;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.45em;
+}
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.main-nav {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  color: #34495e;
+}
+
+.logo a {
+  font-family: 'Amaranth', sans-serif !important;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #34495e;
+}
+
+.blog ul li {
+  color: #34495e;
+  border: 1px solid wheat;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 50%);
+  background: radial-gradient(circle at 17% 98%, #d2f7f6, #d2f7ea, #f5e5e5);
+}
+
+.main-nav a {
+  color: #34495e;
+  font-size: 0.99em;
+}
+
+.main-nav a:hover {
+  color: #718daa;
+}
+
+header {
+  min-height: 520px;
+  background: white url(../images/hero.jpeg) no-repeat center bottom;
+  position: relative;
+  margin-top: 1.5em;
+}
+
+header div.Hero {
+  position: absolute;
+  width: 42%;
+  top: 130px;
+  left: 55%;
 }
 
 /* Section All */
@@ -396,7 +462,7 @@ footer ul li:not(:last-child) {
 
   /* Nav  */
   nav {
-    padding-top: 80px;
+    padding: 0;
   }
   nav > ul {
     padding-left: 10px;
@@ -408,68 +474,14 @@ footer ul li:not(:last-child) {
   }
 }
 
-@media screen and (max-width: 625px) {
-  h1 {
-    font-size: 1em;
-  }
-  h3 {
-    margin-bottom: 0px;
-  }
-  a.btn {
-    font-size: 0.9em;
-  }
-
-  nav {
-    position: static;
-    width: auto;
-    padding: 20px 15px;
-  }
-
-  header a.logo {
-    width: 100%;
-    height: 66px;
-    left: 0px;
-    top: 0px;
-    background-size: 112px 46px;
-    background-position: 20px center;
-  }
-
-  header div.hero {
-    width: 300px;
-    top: 85px;
-    left: 130px;
-  }
-
-  header div.hero h1 {
-    margin-bottom: 10px;
-  }
-
-  /* Main asides  */
-
-  section.about article,
-  section.blog article {
-    background-size: 300px auto;
-    min-height: initial;
-  }
-}
-
-/* Navbar */
-@media (min-width: 769px) {
-  .header,
-  .main-nav {
-    display: flex;
-  }
-
-  .header {
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1150px;
-  }
-}
-
 @media (max-width: 671px) {
+  nav {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
   .flex-container {
     text-align: center;
     justify-content: center;
@@ -507,7 +519,11 @@ footer ul li:not(:last-child) {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 427px) {
+  nav ul {
+    display: grid;
+  }
+
   header {
     display: none;
   }
@@ -548,12 +564,12 @@ footer ul li:not(:last-child) {
 
   .about p {
     margin-top: 15px;
-    text-align: center;
+    text-align: left;
     font-size: 15px;
   }
 
   .blog p {
-    text-align: center;
+    text-align: left;
   }
 
   footer {
@@ -565,6 +581,15 @@ footer ul li:not(:last-child) {
     align-items: center;
     margin: 20px auto;
     font-size: 0.7em;
+  }
+
+  .form-wrap {
+    font-size: 13px;
+  }
+
+  .trademark {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -586,11 +611,6 @@ footer ul li:not(:last-child) {
   .about,
   .blog {
     padding: 10px 0;
-  }
-
-  .about p,
-  .blog p {
-    text-align: left;
   }
 
   .flex-container ul li {
@@ -618,14 +638,5 @@ footer ul li:not(:last-child) {
 
   .contact p {
     padding: 0;
-  }
-
-  .form-wrap {
-    font-size: 13px;
-  }
-
-  .trademark {
-    display: flex;
-    flex-wrap: wrap;
   }
 }

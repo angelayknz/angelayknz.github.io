@@ -91,6 +91,8 @@ nav ul li {
 .main-nav {
   margin-top: 5px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: inherit;
 }
 
 .logo a,
